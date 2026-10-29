@@ -1,0 +1,31 @@
+{
+  "history_2026_only": true,
+  "player_vocabulary_training_only": true,
+  "no_old_checkpoint_or_worlds_finetune": true,
+  "feature_prefix_exact": 2809,
+  "restored_models": 6,
+  "max_restored_probability_error": 3.0261009312304576e-05,
+  "temporal_partitions": {
+    "benchmark": {
+      "selection_train": 861,
+      "selection_validation": 190,
+      "train": 1052,
+      "calibration_early": 179,
+      "calibration_late": 150,
+      "evaluation": 412
+    },
+    "worlds": {
+      "selection_train": 2452,
+      "selection_validation": 943,
+      "train": 3395,
+      "calibration_early": 58,
+      "calibration_late": 3,
+      "evaluation": 8
+    }
+  },
+  "benchmark_membership": 412,
+  "model_swap_complementarity": true,
+  "auxiliary_bounded": true,
+  "region_weights_sum_to_one": true,
+  "historical_guard": true
+}

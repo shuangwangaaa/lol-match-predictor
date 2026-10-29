@@ -1,0 +1,20 @@
+{
+  "restored_models": 3,
+  "adaptation_matches": 16,
+  "evaluation_matches": 10,
+  "replay_only_original_2026_training_matches": true,
+  "teacher_unchanged": true,
+  "parent_checkpoint_hashes_unchanged": true,
+  "normalizer_and_calibrator_unchanged": true,
+  "frozen_parameters_exact": true,
+  "changed_tensor_counts": {
+    "42": 17,
+    "43": 17,
+    "44": 17
+  },
+  "saved_predictions_reproduced": true,
+  "probability_complementarity": true,
+  "selected_epochs_from_R2_only": 24,
+  "reversed_future_labels_max_parameter_difference": 0.0,
+  "evaluation_excludes_R1_R2": true
+}

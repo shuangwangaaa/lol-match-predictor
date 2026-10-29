@@ -1,0 +1,37 @@
+{
+  "adaptation_matches": 16,
+  "evaluation_matches": 10,
+  "restored_models": 3,
+  "selected_epochs_from_R2_only": 19,
+  "calibrator_and_normalizer_unchanged": true,
+  "frozen_parameters_exact": true,
+  "actual_changed_tensors": {
+    "42": [
+      "player_embedding.weight",
+      "head.weight",
+      "matchup.0.weight",
+      "matchup.0.bias",
+      "matchup.3.weight"
+    ],
+    "43": [
+      "player_embedding.weight",
+      "head.weight",
+      "matchup.0.weight",
+      "matchup.0.bias",
+      "matchup.3.weight"
+    ],
+    "44": [
+      "player_embedding.weight",
+      "head.weight",
+      "matchup.0.weight",
+      "matchup.0.bias",
+      "matchup.3.weight"
+    ]
+  },
+  "reversed_R3_R4_labels_do_not_change_training": true,
+  "reproduced_training_max_parameter_difference": 0.0,
+  "parent_checkpoint_hashes_unchanged": true,
+  "probability_complementarity": true,
+  "saved_predictions_reproduced": true,
+  "evaluation_excludes_R1_R2": true
+}

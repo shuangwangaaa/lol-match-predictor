@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "model": "roster_transformer_2026_swiss_weighted",
+  "verified_release_files": 46,
+  "final_checkpoint_sha256": {
+    "42": "dd661c873a2ab5d28b02992b9c0846816b037948482b10289220cd7f21de3855",
+    "43": "f4740b37a4949fcb622fa88f3e4a969cd5016026c0e6c43b3cfe9c80b662fd4e",
+    "44": "b2540f225922fb229066ef8d90ebd91001bc0f330ff40a8af3349e50a6391f5d"
+  },
+  "parameters_per_seed": [
+    983587,
+    983587,
+    983587
+  ],
+  "inference_does_not_load_parent_or_replay_assets": true,
+  "snapshot_last_day": "2026-10-26",
+  "historical_date_guard": true,
+  "swap_probability_sum": 1.0000000214836964,
+  "ig_vs_lyon_p_ig": 0.5688658071853712,
+  "mkoi_vs_t1_p_t1": 0.7722155655820163,
+  "device": "cuda"
+}

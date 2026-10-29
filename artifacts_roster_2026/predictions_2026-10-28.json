@@ -1,0 +1,122 @@
+[
+  {
+    "model": "roster_transformer_2026",
+    "team_a": "Movistar KOI",
+    "team_b": "T1",
+    "date": "2026-10-28",
+    "patch": "26.20",
+    "best_of": 3,
+    "p_a_win": 0.22250857110360056,
+    "p_b_win": 0.7774914288963994,
+    "player_only_p_a_win": 0.22228539406224146,
+    "lineup_a": {
+      "top": "myrwn",
+      "jng": "elyoya",
+      "mid": "jojopyun",
+      "bot": "supa",
+      "sup": "alvaro"
+    },
+    "lineup_b": {
+      "top": "doran",
+      "jng": "oner",
+      "mid": "faker",
+      "bot": "peyz",
+      "sup": "keria"
+    },
+    "regions": [
+      "LEC",
+      "LCK"
+    ],
+    "region_weights": {
+      "LCK": 0.4134178485850351,
+      "LPL": 0.27273459455542254,
+      "LEC": 0.1133085763652206,
+      "LCS": 0.08594706155646041,
+      "LCP": 0.05938354417405024,
+      "CBLOL": 0.05520837476381097
+    },
+    "snapshot_last_day": "2026-10-26",
+    "history_since": "2026-01-01",
+    "seed_decompositions": [
+      {
+        "seed": 42,
+        "player_prior_logit": -1.26141357421875,
+        "player_network_correction_logit": -0.09033203125,
+        "team_auxiliary_logit": 0.002673340030014515
+      },
+      {
+        "seed": 43,
+        "player_prior_logit": -1.26141357421875,
+        "player_network_correction_logit": -0.04541015625,
+        "team_auxiliary_logit": 0.0008686066139489412
+      },
+      {
+        "seed": 44,
+        "player_prior_logit": -1.26141357421875,
+        "player_network_correction_logit": -0.0546875,
+        "team_auxiliary_logit": 0.0015197754837572575
+      }
+    ],
+    "lineup_status": "Supplied or last-known lineup; current official starters not fetched."
+  },
+  {
+    "model": "roster_transformer_2026",
+    "team_a": "Invictus Gaming",
+    "team_b": "LYON",
+    "date": "2026-10-28",
+    "patch": "26.20",
+    "best_of": 3,
+    "p_a_win": 0.6028749072449394,
+    "p_b_win": 0.3971250927550606,
+    "player_only_p_a_win": 0.6029139140760694,
+    "lineup_a": {
+      "top": "theshy",
+      "jng": "wei",
+      "mid": "rookie",
+      "bot": "jiaqi",
+      "sup": "meiko"
+    },
+    "lineup_b": {
+      "top": "dhokla",
+      "jng": "inspired",
+      "mid": "saint",
+      "bot": "berserker",
+      "sup": "isles"
+    },
+    "regions": [
+      "LPL",
+      "LCS"
+    ],
+    "region_weights": {
+      "LCK": 0.4134178485850351,
+      "LPL": 0.27273459455542254,
+      "LEC": 0.1133085763652206,
+      "LCS": 0.08594706155646041,
+      "LCP": 0.05938354417405024,
+      "CBLOL": 0.05520837476381097
+    },
+    "snapshot_last_day": "2026-10-26",
+    "history_since": "2026-01-01",
+    "seed_decompositions": [
+      {
+        "seed": 42,
+        "player_prior_logit": 0.4454330503940582,
+        "player_network_correction_logit": -0.0167236328125,
+        "team_auxiliary_logit": -0.0006225586403161287
+      },
+      {
+        "seed": 43,
+        "player_prior_logit": 0.4454330503940582,
+        "player_network_correction_logit": 0.01190185546875,
+        "team_auxiliary_logit": 0.00023345947556663305
+      },
+      {
+        "seed": 44,
+        "player_prior_logit": 0.4454330503940582,
+        "player_network_correction_logit": 0.018798828125,
+        "team_auxiliary_logit": -0.00028839113656431437
+      }
+    ],
+    "lineup_status": "Supplied or last-known lineup; current official starters not fetched."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "year": 2024,
+    "url": "https://chaincc.lol/data/chaincc-players-2024.csv.gz",
+    "sha256_gzip": "a7f5904da91e379d9879190a300d6f067f141c30f0dee58ae2bd0df040bfa0e3",
+    "sha256_uncompressed": "1a7b31c7458a09f9a095a2802aaaa1134065dca362c7f7682cc455dcce29c8b7",
+    "attribution": "ChainCC. League of Legends esports match dataset. CC BY 4.0. https://chaincc.lol/free/data ; accessed 2026-10-28",
+    "rows": 101990
+  },
+  {
+    "year": 2025,
+    "url": "https://chaincc.lol/data/chaincc-players-2025.csv.gz",
+    "sha256_gzip": "48a47fc574fcbe7295133266d6a3a8c0d04d02b2e96a66972fb283ed14a3437a",
+    "sha256_uncompressed": "5152ad4ac2e89ff3f06bfc197e52ade0839face98e0dd67b03712bfc59e512a4",
+    "attribution": "ChainCC. League of Legends esports match dataset. CC BY 4.0. https://chaincc.lol/free/data ; accessed 2026-10-28",
+    "rows": 100530
+  },
+  {
+    "year": 2026,
+    "url": "https://chaincc.lol/data/chaincc-players-2026.csv.gz",
+    "sha256_gzip": "b471ecd4999945253ce5324426fb3b20b56b7a0ea61803072ee240bfdd5cecc2",
+    "sha256_uncompressed": "4b2653984e9df5bf7f087f58fc724566fe480408195c8b8c3e5b76a10fc06de6",
+    "attribution": "ChainCC. League of Legends esports match dataset. CC BY 4.0. https://chaincc.lol/free/data ; accessed 2026-10-28",
+    "rows": 98180
+  }
+]

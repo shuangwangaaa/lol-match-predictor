@@ -1,0 +1,181 @@
+{
+  "model": "roster_transformer_2026",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "scope": "Swiss only, through event date 2026-10-28; play-ins excluded",
+  "metrics": {
+    "all": {
+      "n": 26,
+      "log_loss": 0.6172505772341847,
+      "brier": 0.2153347609027574,
+      "accuracy": 0.5769230769230769,
+      "ece_10_bins": 0.13214212919867796,
+      "calibration_bins": [
+        {
+          "lower": 0.1,
+          "n": 1,
+          "prediction": 0.14914769471815292,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "n": 2,
+          "prediction": 0.22450527954614447,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.3,
+          "n": 4,
+          "prediction": 0.35524871263650765,
+          "observed": 0.25
+        },
+        {
+          "lower": 0.4,
+          "n": 4,
+          "prediction": 0.45894820702105465,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.5,
+          "n": 6,
+          "prediction": 0.5504799165434062,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.6,
+          "n": 7,
+          "prediction": 0.637160708776893,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.7,
+          "n": 2,
+          "prediction": 0.7446653110973422,
+          "observed": 0.5
+        }
+      ],
+      "correct": 15
+    },
+    "BO1": {
+      "n": 20,
+      "log_loss": 0.6528895961622544,
+      "brier": 0.23055597507457454,
+      "accuracy": 0.55,
+      "ece_10_bins": 0.10274616308794172,
+      "calibration_bins": [
+        {
+          "lower": 0.3,
+          "n": 4,
+          "prediction": 0.35524871263650765,
+          "observed": 0.25
+        },
+        {
+          "lower": 0.4,
+          "n": 4,
+          "prediction": 0.45894820702105465,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.5,
+          "n": 5,
+          "prediction": 0.5566554177682135,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.6,
+          "n": 5,
+          "prediction": 0.6394227056522541,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.7,
+          "n": 2,
+          "prediction": 0.7446653110973422,
+          "observed": 0.5
+        }
+      ],
+      "correct": 11
+    },
+    "BO3": {
+      "n": 6,
+      "log_loss": 0.4984538474739526,
+      "brier": 0.1645973803300336,
+      "accuracy": 0.6666666666666666,
+      "ece_10_bins": 0.23012868290113206,
+      "calibration_bins": [
+        {
+          "lower": 0.1,
+          "n": 1,
+          "prediction": 0.14914769471815292,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "n": 2,
+          "prediction": 0.22450527954614447,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.5,
+          "n": 1,
+          "prediction": 0.5196024104193697,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.6,
+          "n": 2,
+          "prediction": 0.6315057165884905,
+          "observed": 0.5
+        }
+      ],
+      "correct": 4
+    },
+    "round_1": {
+      "n": 8,
+      "correct": 4,
+      "accuracy": 0.5
+    },
+    "round_2": {
+      "n": 8,
+      "correct": 5,
+      "accuracy": 0.625
+    },
+    "round_3": {
+      "n": 8,
+      "correct": 4,
+      "accuracy": 0.5
+    },
+    "round_4": {
+      "n": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    }
+  },
+  "official_results_source": "https://lolesports.com/en-GB/tournament/115660540725177488/stage/115660540725570706",
+  "source_csv_last_day": "2026-10-26",
+  "full_local_matches": 24,
+  "official_score_only_matches": 2,
+  "training_protocol": {
+    "selection_train_end": "2026-07-01",
+    "train_end": "2026-09-01",
+    "calibration_early_end": "2026-10-01",
+    "test_start": "2026-10-15"
+  },
+  "calibration": "Existing BO3/BO5 series-logit slopes also applied to BO1; no Swiss-label refit and no dedicated BO1 calibration validation",
+  "temporal_protocol": "All targets on a CSV day are frozen before that day completed games update state; no same-series outcomes or postgame stats enter its input",
+  "retrospective": true,
+  "no_retraining_or_calibrator_refitting": true,
+  "corrections": [
+    "Previous 8 Worlds-series metric included 6 play-in BO5, not 8 Swiss matches",
+    "Previous Oct 28 forecasts supplied patch 26.20; corrected to observed tournament patch 16.20",
+    "Last CSV day four confirmed complete Swiss matches restored using official format and score"
+  ],
+  "checkpoint_sha256": {
+    "42": "f4562fd1892b99d40489162d482bd169c9663a600803946139782a7b75be9e0f",
+    "43": "d873048fb8f115bf3a321a2667696dc0abb2924d016a0e98d31b92ac074c58bc",
+    "44": "70a0a6b64d02ca800c970b2e92f81c9e3936cd4bcf4ab3edee649e59cc4d6421"
+  }
+}

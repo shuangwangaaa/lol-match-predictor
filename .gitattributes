@@ -1,0 +1,5 @@
+# Preserve exact training-source and release-manifest hashes across platforms.
+* -text
+*.pt binary
+*.npz binary
+*.gz binary

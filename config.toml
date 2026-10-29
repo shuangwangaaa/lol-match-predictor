@@ -1,0 +1,51 @@
+# main.py 读取本文件选择模型与训练/预测设置；命令行参数可临时覆盖。
+# 模型：elo_mlp / dense / dense_transformer / ridge_series / resnet_tabular /
+# ft_transformer / tabm_lite / hist_gbm / calibrated_transformer / expert_blend / regional_transformer / roster_transformer
+# roster_transformer_2026 为独立年度实验，显式 --model 切换，未指定 --stage 时自动用 pretrained。
+# roster_transformer_2026_swiss 使用 R1/R2 的 16 场进一步微调，仅在 R3/R4 评估，阶段为 finetuned。
+# roster_transformer_2026_swiss_weighted 是加强权重、Dense 与学习率的独立实验。
+# 当前使用加权微调模型；旧实验权重已清理，2026 预训练底座仅供复现微调。
+model = "roster_transformer_2026_swiss_weighted"
+
+# 训练
+seed = 42
+max_pretrain_epochs = 60   # 仅深度模型：联赛预训练轮数上限
+max_finetune_epochs = 40   # 仅深度模型：世界赛微调轮数上限
+
+# 预测（main.py test），仅深度模型使用
+stage = "finetuned"        # pretrained | finetuned
+seeds = [42, 43, 44]       # 多随机种子等权集成
+
+# 所有赛区权重之和为 1；其余赛区共享 0.2，按 regions 中的数量平分。
+# 修改这些设置后需重新训练 regional_transformer / roster_transformer，不能直接复用旧权重。
+[regional]
+lck = 0.4
+lpl = 0.3
+lec = 0.1
+others_total = 0.2
+regions = ["LCK", "LPL", "LEC", "LCS", "LCP", "CBLOL"]
+region_learning_rate = 0.06
+region_half_life_days = 365.0
+team_half_life_days = 365.0
+team_shrink_per_game = 0.999
+region_max_log_deviation = 1.3862943611198906  # softmax 归一化前的 log 偏移界限
+form_half_life_days = 60.0
+
+# 选手核心模型：个人历史随转会保留，组织历史仅作为有上限的辅助。
+[players]
+history_length = 8
+player_half_life_days = 365.0
+form_half_life_days = 60.0
+initial_variance = 1.0
+minimum_variance = 0.08
+team_aux_limit = 0.15  # 单局组织辅助 logit 的绝对值上限
+
+# 加权微调：两个组内平均损失的系数比；不代表单条样本重复次数。
+[swiss_weighted]
+swiss_weight = 10.0
+replay_weight = 1.0
+learning_rate = 0.0003
+weight_decay = 0.03
+max_epochs = 60
+replay_pool = 256
+replay_batch = 32

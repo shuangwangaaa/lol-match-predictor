@@ -1,0 +1,126 @@
+{
+  "model": "roster_transformer_2026_swiss",
+  "feature_signature": {
+    "regional": {
+      "lck": 0.4,
+      "lpl": 0.3,
+      "lec": 0.1,
+      "others_total": 0.2,
+      "regions": [
+        "LCK",
+        "LPL",
+        "LEC",
+        "LCS",
+        "LCP",
+        "CBLOL"
+      ],
+      "region_learning_rate": 0.06,
+      "region_half_life_days": 365.0,
+      "team_half_life_days": 365.0,
+      "team_shrink_per_game": 0.999,
+      "region_max_log_deviation": 1.3862943611198906,
+      "form_half_life_days": 60.0
+    },
+    "players": {
+      "history_length": 8,
+      "player_half_life_days": 365.0,
+      "form_half_life_days": 60.0,
+      "initial_variance": 1.0,
+      "minimum_variance": 0.08,
+      "team_aux_limit": 0.15
+    },
+    "sources": {
+      "data/teams_all.csv": "bea1c11c7407bed203b1494ecb1d5b46d87b4cb5eb04ebdc6266deaf731645bb",
+      "data/players.csv.gz": "52b06db67e52e00396abd0251760011ea64083633c3cc8d7a1dbd7c133d48f7a",
+      "data_gen/roster_core.py": "06f50ee1645e2661808b97a8a6fecc667504c75fc1b43854abf41d14aaa91144",
+      "data_gen/roster_data.py": "f20ad855eeeeeb4ded826f5d9e941780adadee70dd08de4b744b3fc6f01ba8f5",
+      "data_gen/regional.py": "0c64280df42235d546319363082315cd253627d540196c0cb986f97a024882a4",
+      "models/roster_models.py": "09b73ef168b1dda322d4cc2c7601bb8bfb7d18b3c8653fce1364aefdba289af4",
+      "pipelines/roster_2026.py": "a0842a63a3228ce5304f415d287da8540987f7d1adc4554bcaf4da861f3c6181",
+      "pipelines/roster_train.py": "2a27dda44d1993436f5ed3588b454ab74fef727a3f87414d4576d3dddfe1adc2"
+    },
+    "history_scope": {
+      "since_inclusive": "2026-01-01",
+      "before_exclusive": "2027-01-01",
+      "cold_start": true,
+      "older_checkpoint_used": false
+    }
+  },
+  "checkpoint_stage": "finetuned",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training_scope": "2026 domestic parent plus Swiss R1/R2 only",
+  "parent_model": "roster_transformer_2026",
+  "parent_sha256": {
+    "42": "f4562fd1892b99d40489162d482bd169c9663a600803946139782a7b75be9e0f",
+    "43": "d873048fb8f115bf3a321a2667696dc0abb2924d016a0e98d31b92ac074c58bc",
+    "44": "70a0a6b64d02ca800c970b2e92f81c9e3936cd4bcf4ab3edee649e59cc4d6421"
+  },
+  "adaptation_n": 16,
+  "adaptation_rounds": [
+    1,
+    2
+  ],
+  "selection_train_round": 1,
+  "selection_validation_round": 2,
+  "selection_seed": 42,
+  "selection_max_epochs": 20,
+  "selection_rule": "Minimum R2 calibrated log loss among positive epochs 1..20, first seed only; epoch 0 retained as control",
+  "evaluation_n": 10,
+  "evaluation_rounds": [
+    3,
+    4
+  ],
+  "test_labels_available_to_training": false,
+  "test_labels_in_training_tensors": "NaN",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.03,
+  "trainable_parameter_prefixes": [
+    "player_embedding.",
+    "head.",
+    "matchup."
+  ],
+  "frozen": "Temporal/lineup Transformers, Dense, league/role embeddings, organization auxiliary, normalizer and identity vocabulary",
+  "calibration_refitted": false,
+  "calibration_weights": [
+    0.6175823926937114,
+    0.47163479872442177
+  ],
+  "dynamic_history": "Identical frozen replay inputs as baseline, no extra replay of wins into ratings",
+  "adaptation_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "evaluation_indices": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "input_sha256": "73225aaf933d7bc462976a4f7c9def70f1eb2e9cd6d80c76496c14e5630da397",
+  "training_source_sha256": "8bec0fb60444aca89d65e7c951974efbd5f103cf8ceb15b275074b9af39d38f5",
+  "status": "R3/R4 results previously inspected; retrospective experiment, not independent validation"
+}

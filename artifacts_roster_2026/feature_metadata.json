@@ -1,0 +1,108 @@
+{
+  "player_features": [
+    "ability",
+    "uncertainty",
+    "log_history",
+    "rest",
+    "known",
+    "role_fraction",
+    "win",
+    "surprise",
+    "opponent",
+    "gd15",
+    "cs15",
+    "xp15",
+    "kp",
+    "deaths",
+    "dpm",
+    "cspm",
+    "wpm",
+    "gold_known"
+  ],
+  "history_features": [
+    "win",
+    "surprise",
+    "opponent",
+    "gd15",
+    "cs15",
+    "xp15",
+    "kp",
+    "deaths",
+    "dpm",
+    "cspm",
+    "wpm",
+    "gold_known",
+    "age",
+    "patch_match"
+  ],
+  "cohesion_features": [
+    "pair_games",
+    "pair_opponent_adjusted_form",
+    "five_player_games",
+    "five_player_form"
+  ],
+  "team_auxiliary_features": [
+    "team_recent_surprise",
+    "team_recent_gd15",
+    "team_history",
+    "lineup_retained"
+  ],
+  "players": 2785,
+  "updated_games": 9818,
+  "source_player_rows": 98180,
+  "missing_target_player_slots": 18,
+  "skipped_updates_missing_rosters": 0,
+  "history_window": {
+    "since_inclusive": "2026-01-01",
+    "before_exclusive": "2027-01-01",
+    "first_day": "2026-01-01",
+    "last_day": "2026-10-26",
+    "series": 4483,
+    "games": 9818
+  },
+  "region_weights": {
+    "CBLOL": {
+      "prior": 0.06666666666666667,
+      "current": 0.05516742848094381,
+      "international_games": 37
+    },
+    "LCK": {
+      "prior": 0.4,
+      "current": 0.4134597094929345,
+      "international_games": 96
+    },
+    "LCP": {
+      "prior": 0.06666666666666667,
+      "current": 0.05935596525489527,
+      "international_games": 48
+    },
+    "LCS": {
+      "prior": 0.06666666666666667,
+      "current": 0.08602809124004775,
+      "international_games": 65
+    },
+    "LEC": {
+      "prior": 0.1,
+      "current": 0.1133597068772611,
+      "international_games": 80
+    },
+    "LPL": {
+      "prior": 0.3,
+      "current": 0.2726290986539176,
+      "international_games": 74
+    }
+  },
+  "audit": {
+    "invalid_games": 2,
+    "series_total": 15069,
+    "games_total": 30068,
+    "bo3_targets": 6578,
+    "bo5_targets": 2072,
+    "excluded_single_game_or_ambiguous_series": 6417,
+    "excluded_last_day_targets": 2,
+    "targets_with_provider_format": 0,
+    "target_last_day_exclusive": "2026-10-26"
+  },
+  "identity_source": "case-folded player handle, no stable player ID supplied by source",
+  "lineup_assumption": "historical first-game starters assumed available pre-BP; live inference defaults to last-known unless supplied"
+}

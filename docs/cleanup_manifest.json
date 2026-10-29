@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-29",
+  "status": "completed",
+  "removed_files": 15459.0,
+  "removed_bytes": 1285781926,
+  "targets": [
+    {
+      "path": "__pycache__",
+      "files": 18,
+      "bytes": 325261
+    },
+    {
+      "path": ".deps",
+      "files": 15160,
+      "bytes": 796982586
+    },
+    {
+      "path": "artifacts",
+      "files": 10,
+      "bytes": 2136532
+    },
+    {
+      "path": "artifacts_deep",
+      "files": 39,
+      "bytes": 133222032
+    },
+    {
+      "path": "artifacts_optimized",
+      "files": 80,
+      "bytes": 22152652
+    },
+    {
+      "path": "artifacts_regional",
+      "files": 25,
+      "bytes": 98860770
+    },
+    {
+      "path": "artifacts_regional_simplex",
+      "files": 25,
+      "bytes": 98807034
+    },
+    {
+      "path": "artifacts_roster",
+      "files": 24,
+      "bytes": 86252610
+    },
+    {
+      "path": "artifacts_roster_2026_swiss/seed42",
+      "files": 2,
+      "bytes": 4020651
+    },
+    {
+      "path": "artifacts_roster_2026_swiss/seed43",
+      "files": 2,
+      "bytes": 4020651
+    },
+    {
+      "path": "artifacts_roster_2026_swiss/seed44",
+      "files": 2,
+      "bytes": 4020653
+    },
+    {
+      "path": "artifacts_roster_2026_swiss/snapshot.json",
+      "files": 1,
+      "bytes": 6981416
+    },
+    {
+      "path": "artifacts_roster_2026/benchmark",
+      "files": 14,
+      "bytes": 19038043
+    },
+    {
+      "path": "artifacts_v2",
+      "files": 10,
+      "bytes": 8357176
+    },
+    {
+      "path": "data_gen/__pycache__",
+      "files": 8,
+      "bytes": 104607
+    },
+    {
+      "path": "models/__pycache__",
+      "files": 5,
+      "bytes": 33022
+    },
+    {
+      "path": "pipelines/__pycache__",
+      "files": 15,
+      "bytes": 308442
+    },
+    {
+      "path": "tests/__pycache__",
+      "files": 19,
+      "bytes": 157788
+    }
+  ],
+  "retained": [
+    "artifacts_roster_2026_swiss_weighted: selected model",
+    "artifacts_roster_2026: parent checkpoints and reproducibility features",
+    "artifacts_roster_2026_swiss: lightweight historical comparison without weights",
+    "data: original user data retained locally; raw tables ignored by Git"
+  ]
+}

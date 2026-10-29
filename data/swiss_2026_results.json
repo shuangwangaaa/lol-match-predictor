@@ -1,0 +1,43 @@
+{
+  "event": "Worlds 2026 Swiss Stage",
+  "completed_through_event_date": "2026-10-28",
+  "retrieved_date": "2026-10-29",
+  "source": "https://lolesports.com/en-GB/tournament/115660540725177488/stage/115660540725570706",
+  "note": "Official completed Swiss results only. 0-0 unfinished entries are excluded. Dates are event dates; raw CSV day boundaries may differ. First 24 results cross-check the local CSV; final two use official scores with last-known lineups.",
+  "teams": {
+    "GEN": "Gen.G", "IG": "Invictus Gaming", "HLE": "Hanwha Life Esports",
+    "TES": "Top Esports", "BLG": "Bilibili Gaming", "MKOI": "Movistar KOI",
+    "AL": "Anyone's Legend", "KC": "Karmine Corp", "G2": "G2 Esports",
+    "DK": "Dplus Kia", "TLAW": "Team Liquid", "CFO": "CTBC Flying Oyster",
+    "LOS": "LØS", "T1": "T1", "TSW": "Team Secret Whales", "LYON": "LYON"
+  },
+  "fields": ["round", "event_date", "a", "b", "score_a", "score_b", "best_of"],
+  "matches": [
+    [1, "2026-10-23", "GEN", "IG", 1, 0, 1],
+    [1, "2026-10-23", "HLE", "TES", 1, 0, 1],
+    [1, "2026-10-23", "BLG", "MKOI", 0, 1, 1],
+    [1, "2026-10-23", "AL", "KC", 0, 1, 1],
+    [1, "2026-10-23", "G2", "DK", 0, 1, 1],
+    [1, "2026-10-23", "TLAW", "CFO", 0, 1, 1],
+    [1, "2026-10-23", "LOS", "T1", 0, 1, 1],
+    [1, "2026-10-23", "TSW", "LYON", 0, 1, 1],
+    [2, "2026-10-24", "TES", "AL", 1, 0, 1],
+    [2, "2026-10-24", "MKOI", "CFO", 1, 0, 1],
+    [2, "2026-10-24", "LOS", "G2", 0, 1, 1],
+    [2, "2026-10-24", "KC", "LYON", 0, 1, 1],
+    [2, "2026-10-24", "IG", "TSW", 1, 0, 1],
+    [2, "2026-10-24", "HLE", "GEN", 0, 1, 1],
+    [2, "2026-10-24", "DK", "T1", 1, 0, 1],
+    [2, "2026-10-24", "BLG", "TLAW", 1, 0, 1],
+    [3, "2026-10-25", "IG", "HLE", 1, 0, 1],
+    [3, "2026-10-25", "G2", "TES", 0, 1, 1],
+    [3, "2026-10-25", "MKOI", "DK", 0, 2, 3],
+    [3, "2026-10-25", "LYON", "GEN", 1, 2, 3],
+    [3, "2026-10-26", "T1", "CFO", 1, 0, 1],
+    [3, "2026-10-26", "KC", "BLG", 0, 1, 1],
+    [3, "2026-10-26", "TSW", "LOS", 0, 2, 3],
+    [3, "2026-10-26", "AL", "TLAW", 0, 2, 3],
+    [4, "2026-10-28", "MKOI", "T1", 0, 2, 3],
+    [4, "2026-10-28", "IG", "LYON", 2, 1, 3]
+  ]
+}

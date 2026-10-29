@@ -1,0 +1,36 @@
+{
+  "choices": {
+    "pretrain_epochs": 3,
+    "finetune_epochs": 0,
+    "selection_seed": 42
+  },
+  "validation_end_exclusive": "2026-10-15",
+  "forward_validation": {
+    "n": 3,
+    "log_loss": 0.7584326054261856,
+    "brier": 0.28076047626318146,
+    "accuracy": 0.3333333333333333,
+    "ece_10_bins": 0.5117306832548347,
+    "calibration_bins": [
+      {
+        "lower": 0.3,
+        "n": 1,
+        "prediction": 0.3235047883865353,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.4,
+        "n": 1,
+        "prediction": 0.4813332526589398,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.6,
+        "n": 1,
+        "prediction": 0.6599699091900207,
+        "observed": 1.0
+      }
+    ]
+  },
+  "evaluation_used_for_epoch_or_calibrator_selection": false
+}

@@ -1,0 +1,83 @@
+{
+  "model": "roster_transformer_2026",
+  "profile": "worlds",
+  "feature_signature": {
+    "regional": {
+      "lck": 0.4,
+      "lpl": 0.3,
+      "lec": 0.1,
+      "others_total": 0.2,
+      "regions": [
+        "LCK",
+        "LPL",
+        "LEC",
+        "LCS",
+        "LCP",
+        "CBLOL"
+      ],
+      "region_learning_rate": 0.06,
+      "region_half_life_days": 365.0,
+      "team_half_life_days": 365.0,
+      "team_shrink_per_game": 0.999,
+      "region_max_log_deviation": 1.3862943611198906,
+      "form_half_life_days": 60.0
+    },
+    "players": {
+      "history_length": 8,
+      "player_half_life_days": 365.0,
+      "form_half_life_days": 60.0,
+      "initial_variance": 1.0,
+      "minimum_variance": 0.08,
+      "team_aux_limit": 0.15
+    },
+    "sources": {
+      "data/teams_all.csv": "bea1c11c7407bed203b1494ecb1d5b46d87b4cb5eb04ebdc6266deaf731645bb",
+      "data/players.csv.gz": "52b06db67e52e00396abd0251760011ea64083633c3cc8d7a1dbd7c133d48f7a",
+      "data_gen/roster_core.py": "06f50ee1645e2661808b97a8a6fecc667504c75fc1b43854abf41d14aaa91144",
+      "data_gen/roster_data.py": "f20ad855eeeeeb4ded826f5d9e941780adadee70dd08de4b744b3fc6f01ba8f5",
+      "data_gen/regional.py": "0c64280df42235d546319363082315cd253627d540196c0cb986f97a024882a4",
+      "models/roster_models.py": "09b73ef168b1dda322d4cc2c7601bb8bfb7d18b3c8653fce1364aefdba289af4",
+      "pipelines/roster_2026.py": "a0842a63a3228ce5304f415d287da8540987f7d1adc4554bcaf4da861f3c6181",
+      "pipelines/roster_train.py": "2a27dda44d1993436f5ed3588b454ab74fef727a3f87414d4576d3dddfe1adc2"
+    },
+    "history_scope": {
+      "since_inclusive": "2026-01-01",
+      "before_exclusive": "2027-01-01",
+      "cold_start": true,
+      "older_checkpoint_used": false
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "checkpoint_stage": "pretrained",
+  "training_scope": "2026 only; random initialization and history cold-start on January 1",
+  "domestic_pretraining_n": 3395,
+  "worlds_finetuning_n": 0,
+  "worlds_finetune_years": [],
+  "worlds_2026_optimizer_labels_used": 0,
+  "older_checkpoint_used": false,
+  "older_match_history_used": false,
+  "time_boundaries": {
+    "selection_train_end": "2026-07-01",
+    "train_end": "2026-09-01",
+    "calibration_early_end": "2026-10-01",
+    "test_start": "2026-10-15"
+  },
+  "partition_sizes": {
+    "selection_train": 2452,
+    "selection_validation": 943,
+    "train": 3395,
+    "calibration_early": 58,
+    "calibration_late": 3,
+    "evaluation": 8
+  },
+  "selection_max_epochs": 24,
+  "parameters_architecture": "Unchanged shared player/lineup Transformer and Dense; player vocabulary fitted within this training window",
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "status": "Previously inspected retrospective evaluation, not independent validation"
+}

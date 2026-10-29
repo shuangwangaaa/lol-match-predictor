@@ -1,0 +1,749 @@
+{
+  "protocol": {
+    "model": "roster_transformer_2026_swiss_weighted",
+    "feature_signature": {
+      "regional": {
+        "lck": 0.4,
+        "lpl": 0.3,
+        "lec": 0.1,
+        "others_total": 0.2,
+        "regions": [
+          "LCK",
+          "LPL",
+          "LEC",
+          "LCS",
+          "LCP",
+          "CBLOL"
+        ],
+        "region_learning_rate": 0.06,
+        "region_half_life_days": 365.0,
+        "team_half_life_days": 365.0,
+        "team_shrink_per_game": 0.999,
+        "region_max_log_deviation": 1.3862943611198906,
+        "form_half_life_days": 60.0
+      },
+      "players": {
+        "history_length": 8,
+        "player_half_life_days": 365.0,
+        "form_half_life_days": 60.0,
+        "initial_variance": 1.0,
+        "minimum_variance": 0.08,
+        "team_aux_limit": 0.15
+      },
+      "sources": {
+        "data/teams_all.csv": "bea1c11c7407bed203b1494ecb1d5b46d87b4cb5eb04ebdc6266deaf731645bb",
+        "data/players.csv.gz": "52b06db67e52e00396abd0251760011ea64083633c3cc8d7a1dbd7c133d48f7a",
+        "data_gen/roster_core.py": "06f50ee1645e2661808b97a8a6fecc667504c75fc1b43854abf41d14aaa91144",
+        "data_gen/roster_data.py": "f20ad855eeeeeb4ded826f5d9e941780adadee70dd08de4b744b3fc6f01ba8f5",
+        "data_gen/regional.py": "0c64280df42235d546319363082315cd253627d540196c0cb986f97a024882a4",
+        "models/roster_models.py": "09b73ef168b1dda322d4cc2c7601bb8bfb7d18b3c8653fce1364aefdba289af4",
+        "pipelines/roster_2026.py": "a0842a63a3228ce5304f415d287da8540987f7d1adc4554bcaf4da861f3c6181",
+        "pipelines/roster_train.py": "2a27dda44d1993436f5ed3588b454ab74fef727a3f87414d4576d3dddfe1adc2"
+      },
+      "history_scope": {
+        "since_inclusive": "2026-01-01",
+        "before_exclusive": "2027-01-01",
+        "cold_start": true,
+        "older_checkpoint_used": false
+      }
+    },
+    "checkpoint_stage": "finetuned",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "settings": {
+      "swiss_weight": 10.0,
+      "replay_weight": 1.0,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.03,
+      "max_epochs": 60,
+      "replay_pool": 256,
+      "replay_batch": 32
+    },
+    "parent_sha256": {
+      "42": "f4562fd1892b99d40489162d482bd169c9663a600803946139782a7b75be9e0f",
+      "43": "d873048fb8f115bf3a321a2667696dc0abb2924d016a0e98d31b92ac074c58bc",
+      "44": "70a0a6b64d02ca800c970b2e92f81c9e3936cd4bcf4ab3edee649e59cc4d6421"
+    },
+    "training_scope": "2026 domestic parent; R1/R2 supervised adaptation; original Jan-Aug domestic teacher distillation only",
+    "objective": "(swiss_weight * mean Swiss BCE + replay_weight * mean domestic teacher KL) / sum weights",
+    "weight_unit": "Weights between group-mean losses, not per-row sampling weights or multiplying the whole loss",
+    "teacher": "Immutable original parent, per-game probability; no new domestic labels used",
+    "trainable_prefixes": [
+      "player_embedding.",
+      "dense.",
+      "head.",
+      "matchup."
+    ],
+    "frozen": "Transformers, role/league encodings, organization auxiliary, normalizer and player vocabulary",
+    "selection_seed": 42,
+    "selection_train_round": 1,
+    "selection_validation_round": 2,
+    "selection_rule": "Minimum R2 calibrated log loss over positive epochs; weight 10, LR and budget fixed before R3/R4 inference",
+    "adaptation_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "adaptation_n": 16,
+    "evaluation_indices": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "evaluation_n": 10,
+    "replay_indices": [
+      10,
+      31,
+      34,
+      41,
+      46,
+      51,
+      54,
+      63,
+      78,
+      80,
+      88,
+      93,
+      96,
+      100,
+      110,
+      150,
+      169,
+      193,
+      223,
+      244,
+      249,
+      263,
+      279,
+      326,
+      350,
+      359,
+      363,
+      371,
+      384,
+      397,
+      424,
+      428,
+      434,
+      437,
+      454,
+      470,
+      472,
+      479,
+      482,
+      485,
+      491,
+      494,
+      505,
+      516,
+      535,
+      545,
+      550,
+      565,
+      575,
+      591,
+      599,
+      613,
+      624,
+      643,
+      659,
+      661,
+      663,
+      672,
+      674,
+      688,
+      701,
+      703,
+      751,
+      770,
+      777,
+      782,
+      785,
+      791,
+      799,
+      807,
+      812,
+      826,
+      827,
+      829,
+      838,
+      862,
+      887,
+      902,
+      920,
+      934,
+      943,
+      944,
+      950,
+      981,
+      1019,
+      1053,
+      1064,
+      1144,
+      1145,
+      1155,
+      1159,
+      1185,
+      1213,
+      1214,
+      1230,
+      1236,
+      1253,
+      1260,
+      1282,
+      1325,
+      1337,
+      1353,
+      1363,
+      1378,
+      1390,
+      1410,
+      1414,
+      1419,
+      1425,
+      1445,
+      1464,
+      1466,
+      1473,
+      1502,
+      1506,
+      1510,
+      1517,
+      1531,
+      1545,
+      1558,
+      1572,
+      1599,
+      1608,
+      1615,
+      1640,
+      1677,
+      1683,
+      1690,
+      1691,
+      1721,
+      1726,
+      1733,
+      1734,
+      1737,
+      1744,
+      1763,
+      1814,
+      1826,
+      1831,
+      1847,
+      1855,
+      1858,
+      1881,
+      1904,
+      1907,
+      1971,
+      1991,
+      1996,
+      2006,
+      2025,
+      2039,
+      2044,
+      2073,
+      2076,
+      2092,
+      2121,
+      2136,
+      2151,
+      2175,
+      2181,
+      2185,
+      2195,
+      2205,
+      2211,
+      2231,
+      2321,
+      2333,
+      2345,
+      2440,
+      2448,
+      2473,
+      2501,
+      2505,
+      2510,
+      2524,
+      2535,
+      2539,
+      2545,
+      2578,
+      2598,
+      2604,
+      2605,
+      2610,
+      2658,
+      2797,
+      2814,
+      2815,
+      2871,
+      2884,
+      2893,
+      2901,
+      2903,
+      2910,
+      2933,
+      2947,
+      3009,
+      3017,
+      3035,
+      3055,
+      3057,
+      3063,
+      3082,
+      3095,
+      3101,
+      3112,
+      3131,
+      3134,
+      3137,
+      3180,
+      3199,
+      3231,
+      3234,
+      3286,
+      3298,
+      3329,
+      3344,
+      3364,
+      3366,
+      3379,
+      3380,
+      3387,
+      3417,
+      3433,
+      3449,
+      3455,
+      3459,
+      3463,
+      3466,
+      3488,
+      3507,
+      3517,
+      3519,
+      3523,
+      3527,
+      3545,
+      3556,
+      3557,
+      3559,
+      3568,
+      3615,
+      3638,
+      3644,
+      3653,
+      3658,
+      3661,
+      3662,
+      3706,
+      3720,
+      3733,
+      3749,
+      3782,
+      3786,
+      3794,
+      3816,
+      3829,
+      3830
+    ],
+    "replay_sampling_seed": 20261029,
+    "calibration_refitted": false,
+    "calibration_weights": [
+      0.6175823926937114,
+      0.47163479872442177
+    ],
+    "evaluation_labels_in_training_tensors": "NaN",
+    "R3_R4_used_for_selection": false,
+    "input_sha256": "73225aaf933d7bc462976a4f7c9def70f1eb2e9cd6d80c76496c14e5630da397",
+    "replay_input_sha256": "0383bf2e51b1154f819e77b87cc28099e8ed29b2f89fbb38e8138685542280c7",
+    "source_sha256": "0ef17dae62bbf4dafded9f1a65bae37d39fad3e0f8e9b98f13c114491774d848",
+    "status": "Previously inspected R3/R4 results; retrospective user-requested experiment; multiple settings changed from weak adaptation"
+  },
+  "selection": {
+    "selected_positive_epochs": 24,
+    "R2_zero_update_control_log_loss": 0.6185975830063906,
+    "R2_selected_log_loss": 0.5794820534090768,
+    "selection_seed": 42,
+    "R3_R4_used_for_selection": false
+  },
+  "calibration_weights": [
+    0.6175823926937114,
+    0.47163479872442177
+  ],
+  "results": {
+    "R3_R4": {
+      "base": {
+        "n": 10,
+        "log_loss": 0.5498508369440943,
+        "brier": 0.1871885675393324,
+        "accuracy": 0.6,
+        "ece_10_bins": 0.24099312442916793,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.14914769471815292,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 2,
+            "prediction": 0.22450527954614447,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 2,
+            "prediction": 0.3684357407014528,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.5,
+            "n": 2,
+            "prediction": 0.5276979071355153,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 2,
+            "prediction": 0.6315057165884905,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.7,
+            "n": 1,
+            "prediction": 0.7697627755638689,
+            "observed": 1.0
+          }
+        ],
+        "correct": 6
+      },
+      "weak": {
+        "n": 10,
+        "log_loss": 0.5498608099043868,
+        "brier": 0.18719447341661644,
+        "accuracy": 0.6,
+        "ece_10_bins": 0.24116209178769016,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.14905515594999103,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 2,
+            "prediction": 0.22381913580906115,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 2,
+            "prediction": 0.3664882505528164,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.5,
+            "n": 2,
+            "prediction": 0.5262392930823002,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 2,
+            "prediction": 0.633276853867698,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.7,
+            "n": 1,
+            "prediction": 0.7711283024855754,
+            "observed": 1.0
+          }
+        ],
+        "correct": 6
+      },
+      "weighted": {
+        "n": 10,
+        "log_loss": 0.5488128012056077,
+        "brier": 0.1866354910614584,
+        "accuracy": 0.7,
+        "ece_10_bins": 0.2571379575802316,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.13364399270083133,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 3,
+            "prediction": 0.24288736603530947,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 1,
+            "prediction": 0.3649585474949301,
+            "observed": 1.0
+          },
+          {
+            "lower": 0.4,
+            "n": 1,
+            "prediction": 0.46422330624091246,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.5,
+            "n": 2,
+            "prediction": 0.556852577517511,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.7,
+            "n": 2,
+            "prediction": 0.7480517856072759,
+            "observed": 0.5
+          }
+        ],
+        "correct": 7
+      }
+    },
+    "R3": {
+      "base": {
+        "n": 8,
+        "log_loss": 0.592370221623848,
+        "brier": 0.20799095040162557,
+        "accuracy": 0.5,
+        "ece_10_bins": 0.32303466095163774,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.14914769471815292,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 1,
+            "prediction": 0.22573245676614642,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 2,
+            "prediction": 0.3684357407014528,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.5,
+            "n": 2,
+            "prediction": 0.5276979071355153,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 1,
+            "prediction": 0.6606355788245464,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.7,
+            "n": 1,
+            "prediction": 0.7697627755638689,
+            "observed": 1.0
+          }
+        ],
+        "correct": 4
+      },
+      "weak": {
+        "n": 8,
+        "log_loss": 0.5923119154900318,
+        "brier": 0.20796999118206722,
+        "accuracy": 0.5,
+        "ece_10_bins": 0.3232304152216343,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.14905515594999103,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 1,
+            "prediction": 0.22409847831595525,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 2,
+            "prediction": 0.3664882505528164,
+            "observed": 0.5
+          },
+          {
+            "lower": 0.5,
+            "n": 2,
+            "prediction": 0.5262392930823002,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 1,
+            "prediction": 0.664315904933736,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.7,
+            "n": 1,
+            "prediction": 0.7711283024855754,
+            "observed": 1.0
+          }
+        ],
+        "correct": 4
+      },
+      "weighted": {
+        "n": 8,
+        "log_loss": 0.5831907202168625,
+        "brier": 0.20357405872969273,
+        "accuracy": 0.625,
+        "ece_10_bins": 0.34684116677487015,
+        "calibration_bins": [
+          {
+            "lower": 0.1,
+            "n": 1,
+            "prediction": 0.13364399270083133,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.2,
+            "n": 2,
+            "prediction": 0.25043883184397236,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.3,
+            "n": 1,
+            "prediction": 0.3649585474949301,
+            "observed": 1.0
+          },
+          {
+            "lower": 0.4,
+            "n": 1,
+            "prediction": 0.46422330624091246,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.5,
+            "n": 1,
+            "prediction": 0.5448393478496508,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.7,
+            "n": 2,
+            "prediction": 0.7480517856072759,
+            "observed": 0.5
+          }
+        ],
+        "correct": 5
+      }
+    },
+    "R4": {
+      "base": {
+        "n": 2,
+        "log_loss": 0.37977329822507944,
+        "brier": 0.10397903609015985,
+        "accuracy": 1.0,
+        "ece_10_bins": 0.3104511239868539,
+        "calibration_bins": [
+          {
+            "lower": 0.2,
+            "n": 1,
+            "prediction": 0.22327810232614248,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 1,
+            "prediction": 0.6023758543524346,
+            "observed": 1.0
+          }
+        ],
+        "correct": 2
+      },
+      "weak": {
+        "n": 2,
+        "log_loss": 0.3800563875618067,
+        "brier": 0.10409240235481329,
+        "accuracy": 1.0,
+        "ece_10_bins": 0.31065099525025347,
+        "calibration_bins": [
+          {
+            "lower": 0.2,
+            "n": 1,
+            "prediction": 0.22353979330216708,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.6,
+            "n": 1,
+            "prediction": 0.6022378028016602,
+            "observed": 1.0
+          }
+        ],
+        "correct": 2
+      },
+      "weighted": {
+        "n": 2,
+        "log_loss": 0.4113011251605889,
+        "brier": 0.11888122038852114,
+        "accuracy": 1.0,
+        "ece_10_bins": 0.32945931361630626,
+        "calibration_bins": [
+          {
+            "lower": 0.2,
+            "n": 1,
+            "prediction": 0.2277844344179837,
+            "observed": 0.0
+          },
+          {
+            "lower": 0.5,
+            "n": 1,
+            "prediction": 0.5688658071853712,
+            "observed": 1.0
+          }
+        ],
+        "correct": 2
+      }
+    }
+  }
+}

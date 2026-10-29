@@ -1,0 +1,13 @@
+{
+  "completed_swiss_matches": 26,
+  "bo1": 20,
+  "bo3": 6,
+  "existing_pre_day_feature_matches": 20,
+  "reconstructed_pre_day_inputs_exact": true,
+  "last_day_complete_matches_restored": 4,
+  "final_two_external_labels_do_not_change_features": true,
+  "swapped_probabilities_complementary": true,
+  "saved_predictions_reproduced": true,
+  "checkpoint_hashes_unchanged": true,
+  "metrics_recomputed": true
+}
