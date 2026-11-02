@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-29",
-  "model": "roster_transformer_2026_swiss_weighted",
-  "verified_release_files": 46,
+  "date": "2026-11-02",
+  "model": "roster_transformer_2026_swiss_all",
+  "verified_release_files": 54,
   "final_checkpoint_sha256": {
-    "42": "dd661c873a2ab5d28b02992b9c0846816b037948482b10289220cd7f21de3855",
-    "43": "f4740b37a4949fcb622fa88f3e4a969cd5016026c0e6c43b3cfe9c80b662fd4e",
-    "44": "b2540f225922fb229066ef8d90ebd91001bc0f330ff40a8af3349e50a6391f5d"
+    "42": "208a3e6ffbf25188e130d677d4b3e7134f3c99545e0ea5615fda8e0f4bf2cdb2",
+    "43": "1ee4692ed5d2de4dbdcc8eab018c3acb83d85c812941655b98d4417adb3fea22",
+    "44": "b9d70f20502bcb3202bfe038044960baa8c26a8be5c4b25bf0301bf88acf7433"
   },
   "parameters_per_seed": [
     983587,
@@ -13,10 +13,9 @@
     983587
   ],
   "inference_does_not_load_parent_or_replay_assets": true,
-  "snapshot_last_day": "2026-10-26",
+  "snapshot_last_day": "2026-10-31",
   "historical_date_guard": true,
-  "swap_probability_sum": 1.0000000214836964,
-  "ig_vs_lyon_p_ig": 0.5688658071853712,
-  "mkoi_vs_t1_p_t1": 0.7722155655820163,
+  "swap_probability_sum": 1.0000000050668856,
+  "tes_vs_ig_p_tes": 0.5272436266486569,
   "device": "cuda"
 }

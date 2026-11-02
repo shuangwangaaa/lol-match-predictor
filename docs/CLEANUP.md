@@ -2,6 +2,8 @@
 
 整理日期：2026-10-29。
 
+2026-11-02 更新：当前默认已改为 `artifacts_roster_2026_swiss_all/` 的全瑞士轮版本。旧 R1/R2 加权权重保留作历史对照；以下清单描述 10 月 29 日的整理。当前发布清单和核验记录对应全量版本，旧记录另存为 `release_manifest_2026_10_29.json`、`release_verification_2026_10_29.json`。
+
 ## 保留
 
 - 当前使用模型：`artifacts_roster_2026_swiss_weighted/seed42,43,44/finetuned.pt`，连同快照、校准、逐场预测、选择轨迹、训练协议和核验记录。

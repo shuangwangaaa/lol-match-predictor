@@ -1,0 +1,41 @@
+{
+  "signature": {
+    "complete_manifest": "fb37857729fc72f5f55840757fdc7a10c9297700838b6ba308370da32ea297d6",
+    "initial_manifest": "0726bb66a4b1b6a7b3e17ad86ef123f01d63ebbb10dbaacdd4845e1ac9b4fb09",
+    "old_inputs": "73225aaf933d7bc462976a4f7c9def70f1eb2e9cd6d80c76496c14e5630da397",
+    "old_snapshot": "ede1fc2d82e006665bc9b70141a1b5c04cabe3ba113b8788daf70fe6eef86a46"
+  },
+  "inputs_sha256": "0b20e13eb6cd4855f50739c636a1fe5623ca68f5d75ea6c221ce9e8cc9dd4684",
+  "snapshot_sha256": "7db6c3d927f0003e8a3008a932a02b60e0c834bb25c68fe67301b58ef115b395",
+  "sources": [
+    {
+      "kind": "teams",
+      "url": "https://chaincc.lol/data/chaincc-teams-2026.csv.gz",
+      "bytes": 2291083,
+      "sha256": "c3a660a0e942a6f3bee5f8b1818a76a1fba8e9226c9a7d42bdbe3820e8c07a25",
+      "rows": 19696,
+      "last_day": "2026-10-31",
+      "worlds_rows": 102,
+      "worlds_games": 51,
+      "worlds_last_day": "2026-10-31"
+    },
+    {
+      "kind": "players",
+      "url": "https://chaincc.lol/data/chaincc-players-2026.csv.gz",
+      "bytes": 10963253,
+      "sha256": "8044719d7f47848cecaa97df8e553c25b5c220f37685e8aa9003c9a913aceb70",
+      "rows": 98480,
+      "last_day": "2026-10-31",
+      "worlds_rows": 510,
+      "worlds_games": 51,
+      "worlds_last_day": "2026-10-31"
+    }
+  ],
+  "series": 33,
+  "maps": 51,
+  "old_swiss_maps": 29,
+  "new_history_maps": 22,
+  "snapshot_last_day": "2026-10-31",
+  "supervised_features": "all pre-series/pre-day; first 24 preserved exactly",
+  "bracket_or_knockout_outcomes_used": false
+}

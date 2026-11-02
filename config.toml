@@ -4,8 +4,8 @@
 # roster_transformer_2026 为独立年度实验，显式 --model 切换，未指定 --stage 时自动用 pretrained。
 # roster_transformer_2026_swiss 使用 R1/R2 的 16 场进一步微调，仅在 R3/R4 评估，阶段为 finetuned。
 # roster_transformer_2026_swiss_weighted 是加强权重、Dense 与学习率的独立实验。
-# 当前使用加权微调模型；旧实验权重已清理，2026 预训练底座仅供复现微调。
-model = "roster_transformer_2026_swiss_weighted"
+# 当前使用全瑞士轮 33 场/51 局加权微调；旧 R1/R2 加权版保留历史预测对照。
+model = "roster_transformer_2026_swiss_all"
 
 # 训练
 seed = 42

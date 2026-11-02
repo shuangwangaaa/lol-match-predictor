@@ -1,5 +1,5 @@
 # Preserve exact training-source and release-manifest hashes across platforms.
-* -text
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.pt binary
 *.npz binary
 *.gz binary

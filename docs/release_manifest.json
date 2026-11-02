@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-29",
-  "model": "roster_transformer_2026_swiss_weighted",
+  "date": "2026-11-02",
+  "model": "roster_transformer_2026_swiss_all",
   "files": {
     "config.toml": {
-      "sha256": "a3513c409c8d2246aa454c86806a1d0b14b4bdab4452db7463dc27143917fd6e",
-      "bytes": 2218
+      "sha256": "0559b5d81cf8612b9d8ade3844a21a0c53cc618d600978b47292049aaba49c09",
+      "bytes": 2211
     },
     "main.py": {
-      "sha256": "e28f41a8ea06c6c8f00b828bab8330be53ee6a4ed88fdb349298e628af4f03b3",
-      "bytes": 42781
+      "sha256": "62295c552fd8cf6b15f606e476bc0375bfafca37f4e057da4511d6504d2f0e60",
+      "bytes": 43119
     },
     "core.py": {
       "sha256": "dc8dcb529e96642d68280429cf5d8649f9c7589e52aad595e41aa310531b49cf",
@@ -118,6 +118,10 @@
       "sha256": "8bec0fb60444aca89d65e7c951974efbd5f103cf8ceb15b275074b9af39d38f5",
       "bytes": 15143
     },
+    "pipelines/swiss_complete.py": {
+      "sha256": "d2d18b010e483f6a5607fb2dd5f3b4da572bca660ea88b89ef4f9e66c3381ae7",
+      "bytes": 17903
+    },
     "pipelines/swiss_replay.py": {
       "sha256": "d73198cce9daea4c17e38f92da4163765c70e2a1f0c344f4cbef30e749e18084",
       "bytes": 14631
@@ -126,65 +130,93 @@
       "sha256": "0ef17dae62bbf4dafded9f1a65bae37d39fad3e0f8e9b98f13c114491774d848",
       "bytes": 17532
     },
-    "artifacts_roster_2026_swiss_weighted/metrics.json": {
-      "sha256": "7af53f1f968a420c174dee6d98682c9d88c75d0969f9a47160f288d2bb07f7e0",
-      "bytes": 16861
+    "pipelines/worlds_rank.py": {
+      "sha256": "f56c463679918fd1672c259b0b4160faedde42ec91633e1f04305ffac0d854ef",
+      "bytes": 15128
     },
-    "artifacts_roster_2026_swiss_weighted/predictions.csv": {
-      "sha256": "825c472f2cf8c5be08ba1a16d2894ba8ef7bbee38757b72a39f797fa94fc23fc",
-      "bytes": 1248
+    "artifacts_roster_2026_swiss_all/forecast_requests.json": {
+      "sha256": "2f8aeb6617be48488f716332c9770ba8e8984db96bc05d35637a1f0b24318661",
+      "bytes": 30987
     },
-    "artifacts_roster_2026_swiss_weighted/predictions.json": {
-      "sha256": "fb825024857542c5a47f7d27935c235e605387f493253db3a9b2389bce0bea1f",
-      "bytes": 12008
+    "artifacts_roster_2026_swiss_all/metrics.json": {
+      "sha256": "6ec0e3640611a2abd6b8c4406a3833323ee487b73bcae45f3d27827b28fd795c",
+      "bytes": 10070
     },
-    "artifacts_roster_2026_swiss_weighted/protocol.json": {
-      "sha256": "f5e417ff9444582f1bc3e3bcb5f26d0421d4b3c0c67cee8e610000dc82a2d357",
-      "bytes": 6969
+    "artifacts_roster_2026_swiss_all/preparation.json": {
+      "sha256": "d5e8c0de624937d749029557340acd89d6020ed6586d668a48a47b7810f92fa5",
+      "bytes": 1572
     },
-    "artifacts_roster_2026_swiss_weighted/report.md": {
-      "sha256": "235ba10b6835e5e93cc02ce12423fe2fb50e1e2c98c5058a3cfba834ceea8c85",
-      "bytes": 3089
+    "artifacts_roster_2026_swiss_all/protocol.json": {
+      "sha256": "4557e02e2279b64423355ede2790fdae7e671d0dadc27cdfca9d862841aeb48b",
+      "bytes": 7966
     },
-    "artifacts_roster_2026_swiss_weighted/seed42/finetuned.pt": {
-      "sha256": "dd661c873a2ab5d28b02992b9c0846816b037948482b10289220cd7f21de3855",
-      "bytes": 4021211
+    "artifacts_roster_2026_swiss_all/rankings.json": {
+      "sha256": "8a963e0ccfe5c9ee5e513a26149db6a49238519449cab13aa85413c64a6facc4",
+      "bytes": 16424
     },
-    "artifacts_roster_2026_swiss_weighted/seed42/predictions.npz": {
-      "sha256": "f7f7b5728a206e200d254a73da11d7faaaaa0e1d76e31c3e7f40ba8652c7f3fd",
-      "bytes": 656
+    "artifacts_roster_2026_swiss_all/report.md": {
+      "sha256": "e379b3581241dfdb2e80ecee89fd6488f778621410e3fbd16443435bc49d4682",
+      "bytes": 4911
     },
-    "artifacts_roster_2026_swiss_weighted/seed43/finetuned.pt": {
-      "sha256": "f4740b37a4949fcb622fa88f3e4a969cd5016026c0e6c43b3cfe9c80b662fd4e",
-      "bytes": 4021211
+    "artifacts_roster_2026_swiss_all/samples.json": {
+      "sha256": "0a51b84e7e2764282848c30f71537213802212de58f184c8870d90a9b27b6800",
+      "bytes": 21345
     },
-    "artifacts_roster_2026_swiss_weighted/seed43/predictions.npz": {
-      "sha256": "5d9a13ec4e4fb7fd1c2035df52b0d655585a1bf5933f9fc076c9dee8a32bbc32",
-      "bytes": 657
+    "artifacts_roster_2026_swiss_all/seed42/finetuned.pt": {
+      "sha256": "208a3e6ffbf25188e130d677d4b3e7134f3c99545e0ea5615fda8e0f4bf2cdb2",
+      "bytes": 4022235
     },
-    "artifacts_roster_2026_swiss_weighted/seed44/finetuned.pt": {
-      "sha256": "b2540f225922fb229066ef8d90ebd91001bc0f330ff40a8af3349e50a6391f5d",
-      "bytes": 4021211
+    "artifacts_roster_2026_swiss_all/seed42/predictions.npz": {
+      "sha256": "92687bbafd021a2b2d005a2a472939fa93fa8a68eca9dc199a2683b3f31c37a6",
+      "bytes": 376
     },
-    "artifacts_roster_2026_swiss_weighted/seed44/predictions.npz": {
-      "sha256": "7928ad68331fb05d672b17096fcb8d0614a7c43c8d7914497e899315cdca7f4f",
-      "bytes": 657
+    "artifacts_roster_2026_swiss_all/seed43/finetuned.pt": {
+      "sha256": "1ee4692ed5d2de4dbdcc8eab018c3acb83d85c812941655b98d4417adb3fea22",
+      "bytes": 4022235
     },
-    "artifacts_roster_2026_swiss_weighted/selection.json": {
-      "sha256": "fe4908a936fbcd10c592cb73cc05086ad5ae59723dd403a9f838d71997c75d00",
-      "bytes": 12806
+    "artifacts_roster_2026_swiss_all/seed43/predictions.npz": {
+      "sha256": "e100ef44025b8b32156e12cb270230f94697cfd86d942d4193fa55d8d02c3cb5",
+      "bytes": 375
     },
-    "artifacts_roster_2026_swiss_weighted/snapshot.json": {
-      "sha256": "ede1fc2d82e006665bc9b70141a1b5c04cabe3ba113b8788daf70fe6eef86a46",
-      "bytes": 6981416
+    "artifacts_roster_2026_swiss_all/seed44/finetuned.pt": {
+      "sha256": "b9d70f20502bcb3202bfe038044960baa8c26a8be5c4b25bf0301bf88acf7433",
+      "bytes": 4022235
     },
-    "artifacts_roster_2026_swiss_weighted/training_history.json": {
-      "sha256": "eca2ae2e490127b2dc4126285caf285b5a3c37b6c2bfaa9c44d700fdda6cf75d",
-      "bytes": 9842
+    "artifacts_roster_2026_swiss_all/seed44/predictions.npz": {
+      "sha256": "e0d88b8f1ba4e8063336eeb9bdd8c008f3c9b83a77a521787a519cba61188b9a",
+      "bytes": 374
     },
-    "artifacts_roster_2026_swiss_weighted/verification.json": {
-      "sha256": "ca684087903cfe39164bdc625d08ca363711689b61b974fba913da6b01f4aa89",
-      "bytes": 599
+    "artifacts_roster_2026_swiss_all/snapshot.json": {
+      "sha256": "7db6c3d927f0003e8a3008a932a02b60e0c834bb25c68fe67301b58ef115b395",
+      "bytes": 6982065
+    },
+    "artifacts_roster_2026_swiss_all/training_fit.json": {
+      "sha256": "9dd580370f727ca8bc9bb7ffb3b1a2b5bf2cf71da2901f41d0eff7f8f695432d",
+      "bytes": 7454
+    },
+    "artifacts_roster_2026_swiss_all/training_history.json": {
+      "sha256": "18452e30b188f2774136a4b9282ba332bcbda9e8b575d26cbef1a91bf2d8ac4d",
+      "bytes": 12655
+    },
+    "artifacts_roster_2026_swiss_all/training_inputs.npz": {
+      "sha256": "0b20e13eb6cd4855f50739c636a1fe5623ca68f5d75ea6c221ce9e8cc9dd4684",
+      "bytes": 68396
+    },
+    "artifacts_roster_2026_swiss_all/verification.json": {
+      "sha256": "d0d230d41fc170af25d1324c9ff40ce1fab515812b19941c9dba2dbccdaf98fa",
+      "bytes": 766
+    },
+    "data/swiss_2026_results.json": {
+      "sha256": "0726bb66a4b1b6a7b3e17ad86ef123f01d63ebbb10dbaacdd4845e1ac9b4fb09",
+      "bytes": 2144
+    },
+    "data/swiss_2026_complete.json": {
+      "sha256": "fb37857729fc72f5f55840757fdc7a10c9297700838b6ba308370da32ea297d6",
+      "bytes": 974
+    },
+    "data/worlds_2026_knockouts.json": {
+      "sha256": "4494509ade114dde6e52e625d5096e969bd3ba21c7d524820dbc5b1243d7cc44",
+      "bytes": 1218
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-11-02",
+  "source": "https://lolesports.com/en-US/leagues/worlds",
+  "bracket_source": "https://gamedaily.com/games/lol-worlds-2026-knockouts-bracket",
+  "bracket_graphic": "https://gamedaily.com/.image/MTU6MDAwMDAwMDAwMDU5Nzc4/worlds-2026-knockout-stage-bracket.jpg?profile=w2560&x=50&y=50",
+  "cross_check": "https://timesaver.gg/blog/worlds-2026-bracket",
+  "note": "Quarterfinal dates and formats checked against official schedule; fixed halves checked against Riot broadcast graphic reproduced by GameDaily. UTC timestamps; China time is UTC+8.",
+  "best_of": 5,
+  "quarterfinals": [
+    {"id": "QF1", "a": "TES", "b": "IG", "start_utc": "2026-11-03T22:00:00Z"},
+    {"id": "QF2", "a": "GEN", "b": "LYON", "start_utc": "2026-11-04T22:00:00Z"},
+    {"id": "QF3", "a": "DK", "b": "BLG", "start_utc": "2026-11-05T22:00:00Z"},
+    {"id": "QF4", "a": "T1", "b": "KC", "start_utc": "2026-11-06T22:00:00Z"}
+  ],
+  "semifinals": [
+    {"id": "SF1", "left": "QF1", "right": "QF2", "start_utc": "2026-11-07T22:00:00Z"},
+    {"id": "SF2", "left": "QF3", "right": "QF4", "start_utc": "2026-11-08T22:00:00Z"}
+  ],
+  "final": {"id": "F", "left": "SF1", "right": "SF2", "start_utc": "2026-11-14T19:00:00Z"}
+}

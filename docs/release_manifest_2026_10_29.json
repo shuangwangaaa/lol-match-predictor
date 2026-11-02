@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-29",
+  "model": "roster_transformer_2026_swiss_weighted",
+  "files": {
+    "config.toml": {
+      "sha256": "a3513c409c8d2246aa454c86806a1d0b14b4bdab4452db7463dc27143917fd6e",
+      "bytes": 2218
+    },
+    "main.py": {
+      "sha256": "e28f41a8ea06c6c8f00b828bab8330be53ee6a4ed88fdb349298e628af4f03b3",
+      "bytes": 42781
+    },
+    "core.py": {
+      "sha256": "dc8dcb529e96642d68280429cf5d8649f9c7589e52aad595e41aa310531b49cf",
+      "bytes": 11924
+    },
+    "requirements.txt": {
+      "sha256": "0e1d37db778ffe5e812422e78a432aa5f832ce6ddb1818a8fcf78dfb01b063d4",
+      "bytes": 64
+    },
+    "models/__init__.py": {
+      "sha256": "cf501bb997027c513017de5d3d7237356a106a8fdc737d903b329682230f0455",
+      "bytes": 99
+    },
+    "models/deep_models.py": {
+      "sha256": "24cce37355b0502103bd96e8a8be5c1b0f6ea0306f2473ec963a6ca4fe19dde2",
+      "bytes": 4780
+    },
+    "models/elo_mlp.py": {
+      "sha256": "7dab7869dd7354373875437a761ac3a6d8bcc59f61de43490cd2317f7a23c3a6",
+      "bytes": 1742
+    },
+    "models/roster_models.py": {
+      "sha256": "09b73ef168b1dda322d4cc2c7601bb8bfb7d18b3c8653fce1364aefdba289af4",
+      "bytes": 4915
+    },
+    "models/tabular_models.py": {
+      "sha256": "86db3592e0f21394bc383ed7eb5ab52810ed07b26acfba61463221a197fb4185",
+      "bytes": 5753
+    },
+    "data_gen/__init__.py": {
+      "sha256": "2fecfec92157a4260a0af1a0c0f0f1f2a9764abe20e2b3fcf43d4d733211aa7f",
+      "bytes": 76
+    },
+    "data_gen/deep_data.py": {
+      "sha256": "49305414130a0279ddba30ea42a511261a3629c98d3c737d45b06bc9ad513c59",
+      "bytes": 4868
+    },
+    "data_gen/features_v2.py": {
+      "sha256": "dfe572ea715cb250678da0cf7a68f829dbd0b103b150669e68293cd1582e141c",
+      "bytes": 18551
+    },
+    "data_gen/fetch_chaincc.py": {
+      "sha256": "bf2ed6b56471ba803558ab3633db4c74976f291a9923255dc731783d407750cf",
+      "bytes": 4893
+    },
+    "data_gen/fetch_players.py": {
+      "sha256": "6403083d315ca80abcdd879932f646b04ba01efbd869a973924cbe2d6a0dd984",
+      "bytes": 3100
+    },
+    "data_gen/regional.py": {
+      "sha256": "0c64280df42235d546319363082315cd253627d540196c0cb986f97a024882a4",
+      "bytes": 12050
+    },
+    "data_gen/roster_core.py": {
+      "sha256": "06f50ee1645e2661808b97a8a6fecc667504c75fc1b43854abf41d14aaa91144",
+      "bytes": 10868
+    },
+    "data_gen/roster_data.py": {
+      "sha256": "f20ad855eeeeeb4ded826f5d9e941780adadee70dd08de4b744b3fc6f01ba8f5",
+      "bytes": 7757
+    },
+    "pipelines/__init__.py": {
+      "sha256": "d7ea32d73cf496824ee4e1890767f62a1e70340170564f66c2dbae868f5c089b",
+      "bytes": 90
+    },
+    "pipelines/blend_experts.py": {
+      "sha256": "7c8e3d8208b5b530b5d6246e3071f0efde3ab09a6911dbeedc7d582ae2c00531",
+      "bytes": 11027
+    },
+    "pipelines/diagnose_match.py": {
+      "sha256": "8dfbc595000a54c60cb058b15b2334cd2b419a8c231adefbcd120ab150d116f9",
+      "bytes": 4425
+    },
+    "pipelines/improve.py": {
+      "sha256": "1e26e3c28b07397f6e209f467c33ef8b5f97712ecf6c22dbe0b45e0de1418f7b",
+      "bytes": 14554
+    },
+    "pipelines/optimize.py": {
+      "sha256": "d782c60bc3218a179e376709fb9bc75e7b1e391ebce627629056fdea09b254a7",
+      "bytes": 24018
+    },
+    "pipelines/predict_v2.py": {
+      "sha256": "8be01f75483757aa6c22bfa31aa3b7c2c69cb6796d26549ed9652f21554805cc",
+      "bytes": 5796
+    },
+    "pipelines/regional_train.py": {
+      "sha256": "7a63c5f935b6f0b9cbe0d8c3663cd1cf25368b50748be766a10f4bde69361da4",
+      "bytes": 22050
+    },
+    "pipelines/report_optimized.py": {
+      "sha256": "82f8f5f9b545450fc319c8c046f628b5e491da8b1906efc7bfeb98a1f8faa0cc",
+      "bytes": 10922
+    },
+    "pipelines/roster_2026.py": {
+      "sha256": "cff0b35175ac2975bd0790f8c683706ccf4c9a347566e20d0359e6a567ed3a24",
+      "bytes": 17284
+    },
+    "pipelines/roster_train.py": {
+      "sha256": "421ff5b5f3140cec21879a3a51fd24c0246d17e54838bafea20e7146268b917a",
+      "bytes": 28104
+    },
+    "pipelines/summarize_deep.py": {
+      "sha256": "3ab3b3cd54a9ea40f5f511442a4c41e8376b0ceeac500a1e977337a8234fadee",
+      "bytes": 9272
+    },
+    "pipelines/swiss_adapt.py": {
+      "sha256": "8bec0fb60444aca89d65e7c951974efbd5f103cf8ceb15b275074b9af39d38f5",
+      "bytes": 15143
+    },
+    "pipelines/swiss_replay.py": {
+      "sha256": "d73198cce9daea4c17e38f92da4163765c70e2a1f0c344f4cbef30e749e18084",
+      "bytes": 14631
+    },
+    "pipelines/swiss_weighted.py": {
+      "sha256": "0ef17dae62bbf4dafded9f1a65bae37d39fad3e0f8e9b98f13c114491774d848",
+      "bytes": 17532
+    },
+    "artifacts_roster_2026_swiss_weighted/metrics.json": {
+      "sha256": "7af53f1f968a420c174dee6d98682c9d88c75d0969f9a47160f288d2bb07f7e0",
+      "bytes": 16861
+    },
+    "artifacts_roster_2026_swiss_weighted/predictions.csv": {
+      "sha256": "825c472f2cf8c5be08ba1a16d2894ba8ef7bbee38757b72a39f797fa94fc23fc",
+      "bytes": 1248
+    },
+    "artifacts_roster_2026_swiss_weighted/predictions.json": {
+      "sha256": "fb825024857542c5a47f7d27935c235e605387f493253db3a9b2389bce0bea1f",
+      "bytes": 12008
+    },
+    "artifacts_roster_2026_swiss_weighted/protocol.json": {
+      "sha256": "f5e417ff9444582f1bc3e3bcb5f26d0421d4b3c0c67cee8e610000dc82a2d357",
+      "bytes": 6969
+    },
+    "artifacts_roster_2026_swiss_weighted/report.md": {
+      "sha256": "235ba10b6835e5e93cc02ce12423fe2fb50e1e2c98c5058a3cfba834ceea8c85",
+      "bytes": 3089
+    },
+    "artifacts_roster_2026_swiss_weighted/seed42/finetuned.pt": {
+      "sha256": "dd661c873a2ab5d28b02992b9c0846816b037948482b10289220cd7f21de3855",
+      "bytes": 4021211
+    },
+    "artifacts_roster_2026_swiss_weighted/seed42/predictions.npz": {
+      "sha256": "f7f7b5728a206e200d254a73da11d7faaaaa0e1d76e31c3e7f40ba8652c7f3fd",
+      "bytes": 656
+    },
+    "artifacts_roster_2026_swiss_weighted/seed43/finetuned.pt": {
+      "sha256": "f4740b37a4949fcb622fa88f3e4a969cd5016026c0e6c43b3cfe9c80b662fd4e",
+      "bytes": 4021211
+    },
+    "artifacts_roster_2026_swiss_weighted/seed43/predictions.npz": {
+      "sha256": "5d9a13ec4e4fb7fd1c2035df52b0d655585a1bf5933f9fc076c9dee8a32bbc32",
+      "bytes": 657
+    },
+    "artifacts_roster_2026_swiss_weighted/seed44/finetuned.pt": {
+      "sha256": "b2540f225922fb229066ef8d90ebd91001bc0f330ff40a8af3349e50a6391f5d",
+      "bytes": 4021211
+    },
+    "artifacts_roster_2026_swiss_weighted/seed44/predictions.npz": {
+      "sha256": "7928ad68331fb05d672b17096fcb8d0614a7c43c8d7914497e899315cdca7f4f",
+      "bytes": 657
+    },
+    "artifacts_roster_2026_swiss_weighted/selection.json": {
+      "sha256": "fe4908a936fbcd10c592cb73cc05086ad5ae59723dd403a9f838d71997c75d00",
+      "bytes": 12806
+    },
+    "artifacts_roster_2026_swiss_weighted/snapshot.json": {
+      "sha256": "ede1fc2d82e006665bc9b70141a1b5c04cabe3ba113b8788daf70fe6eef86a46",
+      "bytes": 6981416
+    },
+    "artifacts_roster_2026_swiss_weighted/training_history.json": {
+      "sha256": "eca2ae2e490127b2dc4126285caf285b5a3c37b6c2bfaa9c44d700fdda6cf75d",
+      "bytes": 9842
+    },
+    "artifacts_roster_2026_swiss_weighted/verification.json": {
+      "sha256": "ca684087903cfe39164bdc625d08ca363711689b61b974fba913da6b01f4aa89",
+      "bytes": 599
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # 模型说明与复现边界
 
-版本：2026-10-29。当前默认模型：`roster_transformer_2026_swiss_weighted`。
+本文保留 2026-10-29 的 R1/R2 加权版本 `roster_transformer_2026_swiss_weighted`，用于追溯旧预测。
+
+自 2026-11-02 起，默认模型为 `roster_transformer_2026_swiss_all`：全瑞士轮 33 场、51 局加入训练，状态更新至 10 月 31 日。当前训练方法、淘汰赛胜率和名次分布见 [全瑞士轮报告](../artifacts_roster_2026_swiss_all/report.md)。下文的历史测试成绩不能当作当前全量模型的独立测试成绩。
 
 ## 任务
 

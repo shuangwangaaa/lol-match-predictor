@@ -1,0 +1,594 @@
+{
+  "as_of": "2026-11-02",
+  "model": "roster_transformer_2026_swiss_all",
+  "snapshot_last_day": "2026-10-31",
+  "training_series": 33,
+  "training_maps": 51,
+  "method": "exact probability propagation over seven BO5s, equivalent to enumerating 128 bracket outcomes",
+  "fixed_inputs": "Latest actual lineups; no simulated future player statistics; UTC date-dependent decay only",
+  "calibrator": "unchanged parent calibrator; no fresh out-of-sample calibration test",
+  "ranking_definition": "title-probability ordering for qualified teams; actual tied placement tiers for eliminated teams",
+  "bracket_source": {
+    "as_of": "2026-11-02",
+    "source": "https://lolesports.com/en-US/leagues/worlds",
+    "bracket_source": "https://gamedaily.com/games/lol-worlds-2026-knockouts-bracket",
+    "bracket_graphic": "https://gamedaily.com/.image/MTU6MDAwMDAwMDAwMDU5Nzc4/worlds-2026-knockout-stage-bracket.jpg?profile=w2560&x=50&y=50",
+    "cross_check": "https://timesaver.gg/blog/worlds-2026-bracket",
+    "note": "Quarterfinal dates and formats checked against official schedule; fixed halves checked against Riot broadcast graphic reproduced by GameDaily. UTC timestamps; China time is UTC+8.",
+    "best_of": 5,
+    "quarterfinals": [
+      {
+        "id": "QF1",
+        "a": "TES",
+        "b": "IG",
+        "start_utc": "2026-11-03T22:00:00Z"
+      },
+      {
+        "id": "QF2",
+        "a": "GEN",
+        "b": "LYON",
+        "start_utc": "2026-11-04T22:00:00Z"
+      },
+      {
+        "id": "QF3",
+        "a": "DK",
+        "b": "BLG",
+        "start_utc": "2026-11-05T22:00:00Z"
+      },
+      {
+        "id": "QF4",
+        "a": "T1",
+        "b": "KC",
+        "start_utc": "2026-11-06T22:00:00Z"
+      }
+    ],
+    "semifinals": [
+      {
+        "id": "SF1",
+        "left": "QF1",
+        "right": "QF2",
+        "start_utc": "2026-11-07T22:00:00Z"
+      },
+      {
+        "id": "SF2",
+        "left": "QF3",
+        "right": "QF4",
+        "start_utc": "2026-11-08T22:00:00Z"
+      }
+    ],
+    "final": {
+      "id": "F",
+      "left": "SF1",
+      "right": "SF2",
+      "start_utc": "2026-11-14T19:00:00Z"
+    }
+  },
+  "bracket_sha256": "4494509ade114dde6e52e625d5096e969bd3ba21c7d524820dbc5b1243d7cc44",
+  "quarterfinals": [
+    {
+      "id": "QF1",
+      "a": "TES",
+      "b": "IG",
+      "start_utc": "2026-11-03T22:00:00Z",
+      "start_beijing": "2026-11-04 06:00",
+      "p_a": 0.5272436215817712,
+      "p_b": 0.4727563784182288,
+      "pick": "TES"
+    },
+    {
+      "id": "QF2",
+      "a": "GEN",
+      "b": "LYON",
+      "start_utc": "2026-11-04T22:00:00Z",
+      "start_beijing": "2026-11-05 06:00",
+      "p_a": 0.7795176705741074,
+      "p_b": 0.22048232942589263,
+      "pick": "GEN"
+    },
+    {
+      "id": "QF3",
+      "a": "DK",
+      "b": "BLG",
+      "start_utc": "2026-11-05T22:00:00Z",
+      "start_beijing": "2026-11-06 06:00",
+      "p_a": 0.5069150487593346,
+      "p_b": 0.4930849512406654,
+      "pick": "DK"
+    },
+    {
+      "id": "QF4",
+      "a": "T1",
+      "b": "KC",
+      "start_utc": "2026-11-06T22:00:00Z",
+      "start_beijing": "2026-11-07 06:00",
+      "p_a": 0.7976451222404732,
+      "p_b": 0.20235487775952676,
+      "pick": "T1"
+    }
+  ],
+  "title_ranking": [
+    {
+      "team": "GEN",
+      "champion": 0.2547469771995135,
+      "final": 0.4654018600742432,
+      "top4": 0.7795176705741074,
+      "placements": {
+        "1": 0.2547469771995135,
+        "2": 0.21065488287472972,
+        "3-4": 0.31411581049986415,
+        "5-8": 0.22048232942589263
+      },
+      "expected_place": 3.2085972209667997,
+      "seed_champion_min": 0.22086544576080452,
+      "seed_champion_max": 0.31092819406559613,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "T1",
+      "champion": 0.22213056120737093,
+      "final": 0.4064961650478836,
+      "top4": 0.7976451222404732,
+      "placements": {
+        "1": 0.22213056120737093,
+        "2": 0.18436560384051268,
+        "3-4": 0.39114895719258963,
+        "5-8": 0.20235487775952676
+      },
+      "expected_place": 3.275189824499384,
+      "seed_champion_min": 0.20538935508634618,
+      "seed_champion_max": 0.23276893714001987,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "DK",
+      "champion": 0.1509066770991042,
+      "final": 0.28139977735559374,
+      "top4": 0.5069150487593346,
+      "placements": {
+        "1": 0.1509066770991042,
+        "2": 0.13049310025648955,
+        "3-4": 0.22551527140374084,
+        "5-8": 0.4930849512406654
+      },
+      "expected_place": 4.406248510589501,
+      "seed_champion_min": 0.13112534929074804,
+      "seed_champion_max": 0.174425607311521,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "BLG",
+      "champion": 0.14367356246361593,
+      "final": 0.2685964039304124,
+      "top4": 0.4930849512406654,
+      "placements": {
+        "1": 0.14367356246361593,
+        "2": 0.12492284146679647,
+        "3-4": 0.22448854731025303,
+        "5-8": 0.5069150487593346
+      },
+      "expected_place": 4.474176977918769,
+      "seed_champion_min": 0.11728554916482622,
+      "seed_champion_max": 0.1768531235310466,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "TES",
+      "champion": 0.11160895601325055,
+      "final": 0.2522127885945114,
+      "top4": 0.5272436215817712,
+      "placements": {
+        "1": 0.11160895601325055,
+        "2": 0.14060383258126086,
+        "3-4": 0.2750308329872598,
+        "5-8": 0.4727563784182288
+      },
+      "expected_place": 4.428340996349669,
+      "seed_champion_min": 0.0923929968661673,
+      "seed_champion_max": 0.13769302405805536,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "IG",
+      "champion": 0.09086319423647918,
+      "final": 0.21717393543965313,
+      "top4": 0.4727563784182288,
+      "placements": {
+        "1": 0.09086319423647918,
+        "2": 0.12631074120317395,
+        "3-4": 0.2555824429785757,
+        "5-8": 0.5272436215817712
+      },
+      "expected_place": 4.6651067673493545,
+      "seed_champion_min": 0.08243918462519302,
+      "seed_champion_max": 0.09994617573108405,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "LYON",
+      "champion": 0.014321981042964832,
+      "final": 0.06521141589159224,
+      "top4": 0.22048232942589263,
+      "placements": {
+        "1": 0.014321981042964832,
+        "2": 0.05088943484862741,
+        "3-4": 0.1552709135343004,
+        "5-8": 0.7795176705741074
+      },
+      "expected_place": 5.7264139068419695,
+      "seed_champion_min": 0.010485709685004209,
+      "seed_champion_max": 0.020533921134339606,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    },
+    {
+      "team": "KC",
+      "champion": 0.0117480907377009,
+      "final": 0.04350765366611021,
+      "top4": 0.20235487775952676,
+      "placements": {
+        "1": 0.0117480907377009,
+        "2": 0.03175956292840931,
+        "3-4": 0.15884722409341656,
+        "5-8": 0.7976451222404732
+      },
+      "expected_place": 5.815925795484554,
+      "seed_champion_min": 0.007705211372627443,
+      "seed_champion_max": 0.013735259756001894,
+      "ranking_basis": "descending championship probability under fixed schedule"
+    }
+  ],
+  "all_16_strength_and_standings": [
+    {
+      "team": "GEN",
+      "series_wins": 3,
+      "series_losses": 0,
+      "map_wins": 4,
+      "map_losses": 1,
+      "opponents": [
+        "IG",
+        "HLE",
+        "LYON"
+      ],
+      "buchholz_opponent_final_wins": 8,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.7434611686534094,
+      "champion_probability": 0.2547469771995135,
+      "model_strength_rank": 1
+    },
+    {
+      "team": "T1",
+      "series_wins": 3,
+      "series_losses": 1,
+      "map_wins": 4,
+      "map_losses": 1,
+      "opponents": [
+        "LOS",
+        "DK",
+        "CFO",
+        "MKOI"
+      ],
+      "buchholz_opponent_final_wins": 8,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.7340512380228547,
+      "champion_probability": 0.22213056120737093,
+      "model_strength_rank": 2
+    },
+    {
+      "team": "DK",
+      "series_wins": 3,
+      "series_losses": 0,
+      "map_wins": 4,
+      "map_losses": 0,
+      "opponents": [
+        "G2",
+        "T1",
+        "MKOI"
+      ],
+      "buchholz_opponent_final_wins": 6,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.7277017604483832,
+      "champion_probability": 0.1509066770991042,
+      "model_strength_rank": 3
+    },
+    {
+      "team": "BLG",
+      "series_wins": 3,
+      "series_losses": 2,
+      "map_wins": 5,
+      "map_losses": 3,
+      "opponents": [
+        "MKOI",
+        "TLAW",
+        "KC",
+        "TES",
+        "HLE"
+      ],
+      "buchholz_opponent_final_wins": 11,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.7191596202005499,
+      "champion_probability": 0.14367356246361593,
+      "model_strength_rank": 4
+    },
+    {
+      "team": "HLE",
+      "series_wins": 2,
+      "series_losses": 3,
+      "map_wins": 3,
+      "map_losses": 4,
+      "opponents": [
+        "TES",
+        "GEN",
+        "IG",
+        "G2",
+        "BLG"
+      ],
+      "buchholz_opponent_final_wins": 13,
+      "qualified": false,
+      "placement": "9-11",
+      "mean_bo5_win_vs_other_15": 0.6951525806588775,
+      "champion_probability": 0.0,
+      "model_strength_rank": 5
+    },
+    {
+      "team": "TES",
+      "series_wins": 3,
+      "series_losses": 1,
+      "map_wins": 4,
+      "map_losses": 2,
+      "opponents": [
+        "HLE",
+        "AL",
+        "G2",
+        "BLG"
+      ],
+      "buchholz_opponent_final_wins": 6,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.665824273758319,
+      "champion_probability": 0.11160895601325055,
+      "model_strength_rank": 6
+    },
+    {
+      "team": "IG",
+      "series_wins": 3,
+      "series_losses": 1,
+      "map_wins": 4,
+      "map_losses": 2,
+      "opponents": [
+        "GEN",
+        "TSW",
+        "HLE",
+        "LYON"
+      ],
+      "buchholz_opponent_final_wins": 8,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.6489936155662098,
+      "champion_probability": 0.09086319423647918,
+      "model_strength_rank": 7
+    },
+    {
+      "team": "KC",
+      "series_wins": 3,
+      "series_losses": 2,
+      "map_wins": 5,
+      "map_losses": 2,
+      "opponents": [
+        "AL",
+        "LYON",
+        "BLG",
+        "CFO",
+        "MKOI"
+      ],
+      "buchholz_opponent_final_wins": 9,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.4586186758187453,
+      "champion_probability": 0.0117480907377009,
+      "model_strength_rank": 8
+    },
+    {
+      "team": "LYON",
+      "series_wins": 3,
+      "series_losses": 2,
+      "map_wins": 6,
+      "map_losses": 5,
+      "opponents": [
+        "TSW",
+        "KC",
+        "GEN",
+        "IG",
+        "LOS"
+      ],
+      "buchholz_opponent_final_wins": 11,
+      "qualified": true,
+      "placement": "1-8 (pending)",
+      "mean_bo5_win_vs_other_15": 0.44623122907605267,
+      "champion_probability": 0.014321981042964832,
+      "model_strength_rank": 9
+    },
+    {
+      "team": "AL",
+      "series_wins": 0,
+      "series_losses": 3,
+      "map_wins": 0,
+      "map_losses": 4,
+      "opponents": [
+        "KC",
+        "TES",
+        "TLAW"
+      ],
+      "buchholz_opponent_final_wins": 7,
+      "qualified": false,
+      "placement": "15-16",
+      "mean_bo5_win_vs_other_15": 0.4407795459070047,
+      "champion_probability": 0.0,
+      "model_strength_rank": 10
+    },
+    {
+      "team": "G2",
+      "series_wins": 1,
+      "series_losses": 3,
+      "map_wins": 1,
+      "map_losses": 4,
+      "opponents": [
+        "DK",
+        "LOS",
+        "TES",
+        "HLE"
+      ],
+      "buchholz_opponent_final_wins": 10,
+      "qualified": false,
+      "placement": "12-14",
+      "mean_bo5_win_vs_other_15": 0.41033289097828585,
+      "champion_probability": 0.0,
+      "model_strength_rank": 11
+    },
+    {
+      "team": "LOS",
+      "series_wins": 2,
+      "series_losses": 3,
+      "map_wins": 5,
+      "map_losses": 5,
+      "opponents": [
+        "T1",
+        "G2",
+        "TSW",
+        "TLAW",
+        "LYON"
+      ],
+      "buchholz_opponent_final_wins": 8,
+      "qualified": false,
+      "placement": "9-11",
+      "mean_bo5_win_vs_other_15": 0.3389718469409032,
+      "champion_probability": 0.0,
+      "model_strength_rank": 12
+    },
+    {
+      "team": "MKOI",
+      "series_wins": 2,
+      "series_losses": 3,
+      "map_wins": 2,
+      "map_losses": 6,
+      "opponents": [
+        "BLG",
+        "CFO",
+        "DK",
+        "T1",
+        "KC"
+      ],
+      "buchholz_opponent_final_wins": 13,
+      "qualified": false,
+      "placement": "9-11",
+      "mean_bo5_win_vs_other_15": 0.3011401198772009,
+      "champion_probability": 0.0,
+      "model_strength_rank": 13
+    },
+    {
+      "team": "TLAW",
+      "series_wins": 1,
+      "series_losses": 3,
+      "map_wins": 3,
+      "map_losses": 4,
+      "opponents": [
+        "CFO",
+        "BLG",
+        "AL",
+        "LOS"
+      ],
+      "buchholz_opponent_final_wins": 6,
+      "qualified": false,
+      "placement": "12-14",
+      "mean_bo5_win_vs_other_15": 0.27144089382783293,
+      "champion_probability": 0.0,
+      "model_strength_rank": 14
+    },
+    {
+      "team": "TSW",
+      "series_wins": 0,
+      "series_losses": 3,
+      "map_wins": 0,
+      "map_losses": 4,
+      "opponents": [
+        "LYON",
+        "IG",
+        "LOS"
+      ],
+      "buchholz_opponent_final_wins": 8,
+      "qualified": false,
+      "placement": "15-16",
+      "mean_bo5_win_vs_other_15": 0.2243804744299555,
+      "champion_probability": 0.0,
+      "model_strength_rank": 15
+    },
+    {
+      "team": "CFO",
+      "series_wins": 1,
+      "series_losses": 3,
+      "map_wins": 1,
+      "map_losses": 4,
+      "opponents": [
+        "TLAW",
+        "MKOI",
+        "T1",
+        "KC"
+      ],
+      "buchholz_opponent_final_wins": 9,
+      "qualified": false,
+      "placement": "12-14",
+      "mean_bo5_win_vs_other_15": 0.17376006583541548,
+      "champion_probability": 0.0,
+      "model_strength_rank": 16
+    }
+  ],
+  "node_distributions": {
+    "QF1": {
+      "TES": 0.5272436215817712,
+      "IG": 0.4727563784182288
+    },
+    "QF2": {
+      "GEN": 0.7795176705741074,
+      "LYON": 0.22048232942589263
+    },
+    "QF3": {
+      "DK": 0.5069150487593346,
+      "BLG": 0.4930849512406654
+    },
+    "QF4": {
+      "T1": 0.7976451222404732,
+      "KC": 0.20235487775952676
+    },
+    "SF1": {
+      "TES": 0.2522127885945114,
+      "IG": 0.21717393543965313,
+      "GEN": 0.4654018600742432,
+      "LYON": 0.06521141589159224
+    },
+    "SF2": {
+      "DK": 0.28139977735559374,
+      "BLG": 0.2685964039304124,
+      "T1": 0.4064961650478836,
+      "KC": 0.04350765366611021
+    },
+    "F": {
+      "TES": 0.11160895601325055,
+      "IG": 0.09086319423647918,
+      "GEN": 0.2547469771995135,
+      "LYON": 0.014321981042964832,
+      "DK": 0.1509066770991042,
+      "BLG": 0.14367356246361593,
+      "T1": 0.22213056120737093,
+      "KC": 0.0117480907377009
+    }
+  },
+  "mass_checks": {
+    "champions": 1.0,
+    "finalists": 2.0,
+    "semifinalists": 4.0
+  },
+  "seed_range_note": "Variation among three fitted seeds only; not a confidence interval",
+  "independent_test_matches": 0
+}

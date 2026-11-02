@@ -27,8 +27,8 @@ from models.elo_mlp import ResidualMLP
 from models.tabular_models import NAMES as TABULAR_MODELS
 
 OUT = ROOT/'artifacts_deep'
-MODEL_NAMES = ('elo_mlp', *DEEP_MODELS, 'hist_gbm', 'expert_blend', 'calibrated_transformer', 'regional_transformer', 'roster_transformer', 'roster_transformer_2026', 'roster_transformer_2026_swiss', 'roster_transformer_2026_swiss_weighted')
-DEFAULTS = {'model': 'roster_transformer_2026_swiss_weighted', 'seed': 42, 'max_pretrain_epochs': 60,
+MODEL_NAMES = ('elo_mlp', *DEEP_MODELS, 'hist_gbm', 'expert_blend', 'calibrated_transformer', 'regional_transformer', 'roster_transformer', 'roster_transformer_2026', 'roster_transformer_2026_swiss', 'roster_transformer_2026_swiss_weighted', 'roster_transformer_2026_swiss_all')
+DEFAULTS = {'model': 'roster_transformer_2026_swiss_all', 'seed': 42, 'max_pretrain_epochs': 60,
             'max_finetune_epochs': 40, 'stage': 'finetuned', 'seeds': [42, 43, 44]}
 
 
@@ -569,7 +569,10 @@ def test_matchnet(args, config, parser):
 # --------------------------------------------------------------------------- entry points
 
 def train(config):
-    if config['model'] == 'roster_transformer_2026_swiss_weighted':
+    if config['model'] == 'roster_transformer_2026_swiss_all':
+        from pipelines.swiss_complete import run
+        run(config)
+    elif config['model'] == 'roster_transformer_2026_swiss_weighted':
         from pipelines.swiss_weighted import run
         run(config)
     elif config['model'] == 'roster_transformer_2026_swiss':
@@ -597,7 +600,10 @@ def train(config):
 
 
 def test(args, config, parser):
-    if config['model'] == 'roster_transformer_2026_swiss_weighted':
+    if config['model'] == 'roster_transformer_2026_swiss_all':
+        from pipelines.swiss_complete import test as roster_test
+        roster_test(args, config, parser)
+    elif config['model'] == 'roster_transformer_2026_swiss_weighted':
         from pipelines.swiss_weighted import test as roster_test
         roster_test(args, config, parser)
     elif config['model'] == 'roster_transformer_2026_swiss':

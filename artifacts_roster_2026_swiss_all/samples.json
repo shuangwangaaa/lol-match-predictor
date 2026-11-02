@@ -1,0 +1,1121 @@
+[
+  {
+    "league": "WCS",
+    "names_a": [
+      "kiin",
+      "canyon",
+      "chovy",
+      "ruler",
+      "duro"
+    ],
+    "names_b": [
+      "theshy",
+      "wei",
+      "rookie",
+      "jiaqi",
+      "meiko"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "GEN",
+    "b": "IG",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482269"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "zeus",
+      "kanavi",
+      "zeka",
+      "gumayusi",
+      "delight"
+    ],
+    "names_b": [
+      "369",
+      "tian",
+      "creme",
+      "jackeylove",
+      "zhuo"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "HLE",
+    "b": "TES",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483314"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "bin",
+      "xun",
+      "knight",
+      "viper",
+      "on"
+    ],
+    "names_b": [
+      "myrwn",
+      "elyoya",
+      "jojopyun",
+      "supa",
+      "alvaro"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "BLG",
+    "b": "MKOI",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483342"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "breathe",
+      "tarzan",
+      "shanks",
+      "hope",
+      "kael"
+    ],
+    "names_b": [
+      "canna",
+      "yike",
+      "kyeahoo",
+      "caliste",
+      "busio"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "AL",
+    "b": "KC",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482292"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "brokenblade",
+      "skewmond",
+      "caps",
+      "hans sama",
+      "labrov"
+    ],
+    "names_b": [
+      "siwoo",
+      "lucid",
+      "showmaker",
+      "smash",
+      "career"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "G2",
+    "b": "DK",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482304"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "morgan",
+      "josedeodo",
+      "quid",
+      "yeon",
+      "corejj"
+    ],
+    "names_b": [
+      "rest",
+      "shad0w",
+      "pout",
+      "doggo",
+      "kino"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "TLAW",
+    "b": "CFO",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482313"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "zest",
+      "curse",
+      "feisty",
+      "duduhh",
+      "ackerman"
+    ],
+    "names_b": [
+      "doran",
+      "oner",
+      "faker",
+      "peyz",
+      "keria"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "LOS",
+    "b": "T1",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-23",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482325"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "pun",
+      "hizto",
+      "dire",
+      "eddie",
+      "bie"
+    ],
+    "names_b": [
+      "dhokla",
+      "inspired",
+      "saint",
+      "berserker",
+      "isles"
+    ],
+    "round": 1,
+    "event_date": "2026-10-23",
+    "a": "TSW",
+    "b": "LYON",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482335"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "369",
+      "tian",
+      "creme",
+      "jackeylove",
+      "zhuo"
+    ],
+    "names_b": [
+      "breathe",
+      "tarzan",
+      "shanks",
+      "hope",
+      "kael"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "TES",
+    "b": "AL",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482539"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "myrwn",
+      "elyoya",
+      "jojopyun",
+      "supa",
+      "alvaro"
+    ],
+    "names_b": [
+      "rest",
+      "shad0w",
+      "pout",
+      "doggo",
+      "kino"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "MKOI",
+    "b": "CFO",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482559"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "zest",
+      "curse",
+      "feisty",
+      "duduhh",
+      "ackerman"
+    ],
+    "names_b": [
+      "brokenblade",
+      "skewmond",
+      "caps",
+      "hans sama",
+      "labrov"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "LOS",
+    "b": "G2",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482570"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "canna",
+      "yike",
+      "kyeahoo",
+      "caliste",
+      "busio"
+    ],
+    "names_b": [
+      "dhokla",
+      "inspired",
+      "saint",
+      "berserker",
+      "isles"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "KC",
+    "b": "LYON",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483571"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "theshy",
+      "wei",
+      "rookie",
+      "jiaqi",
+      "meiko"
+    ],
+    "names_b": [
+      "pun",
+      "hizto",
+      "dire",
+      "eddie",
+      "bie"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "IG",
+    "b": "TSW",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482587"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "zeus",
+      "kanavi",
+      "zeka",
+      "gumayusi",
+      "delight"
+    ],
+    "names_b": [
+      "kiin",
+      "canyon",
+      "chovy",
+      "ruler",
+      "duro"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "HLE",
+    "b": "GEN",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482599"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "siwoo",
+      "lucid",
+      "showmaker",
+      "smash",
+      "career"
+    ],
+    "names_b": [
+      "doran",
+      "oner",
+      "faker",
+      "peyz",
+      "keria"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "DK",
+    "b": "T1",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-24",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482606"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "bin",
+      "xun",
+      "knight",
+      "viper",
+      "on"
+    ],
+    "names_b": [
+      "morgan",
+      "josedeodo",
+      "quid",
+      "yeon",
+      "corejj"
+    ],
+    "round": 2,
+    "event_date": "2026-10-24",
+    "a": "BLG",
+    "b": "TLAW",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-25",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482620"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "theshy",
+      "wei",
+      "rookie",
+      "jiaqi",
+      "meiko"
+    ],
+    "names_b": [
+      "zeus",
+      "kanavi",
+      "zeka",
+      "gumayusi",
+      "delight"
+    ],
+    "round": 3,
+    "event_date": "2026-10-25",
+    "a": "IG",
+    "b": "HLE",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-25",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483687"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "brokenblade",
+      "skewmond",
+      "caps",
+      "hans sama",
+      "labrov"
+    ],
+    "names_b": [
+      "369",
+      "tian",
+      "creme",
+      "jackeylove",
+      "zhuo"
+    ],
+    "round": 3,
+    "event_date": "2026-10-25",
+    "a": "G2",
+    "b": "TES",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-25",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482761"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "myrwn",
+      "elyoya",
+      "jojopyun",
+      "supa",
+      "alvaro"
+    ],
+    "names_b": [
+      "siwoo",
+      "lucid",
+      "showmaker",
+      "smash",
+      "career"
+    ],
+    "round": 3,
+    "event_date": "2026-10-25",
+    "a": "MKOI",
+    "b": "DK",
+    "score_a": 0,
+    "score_b": 2,
+    "best_of": 3,
+    "input_date": "2026-10-25",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483708",
+      "LOLTMNT02_483716"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "dhokla",
+      "inspired",
+      "saint",
+      "berserker",
+      "isles"
+    ],
+    "names_b": [
+      "kiin",
+      "canyon",
+      "chovy",
+      "ruler",
+      "duro"
+    ],
+    "round": 3,
+    "event_date": "2026-10-25",
+    "a": "LYON",
+    "b": "GEN",
+    "score_a": 1,
+    "score_b": 2,
+    "best_of": 3,
+    "input_date": "2026-10-25",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482793",
+      "LOLTMNT02_483730",
+      "LOLTMNT02_482805"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "doran",
+      "oner",
+      "faker",
+      "peyz",
+      "keria"
+    ],
+    "names_b": [
+      "rest",
+      "shad0w",
+      "pout",
+      "doggo",
+      "kino"
+    ],
+    "round": 3,
+    "event_date": "2026-10-26",
+    "a": "T1",
+    "b": "CFO",
+    "score_a": 1,
+    "score_b": 0,
+    "best_of": 1,
+    "input_date": "2026-10-26",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483824"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "canna",
+      "yike",
+      "kyeahoo",
+      "caliste",
+      "busio"
+    ],
+    "names_b": [
+      "bin",
+      "xun",
+      "knight",
+      "viper",
+      "on"
+    ],
+    "round": 3,
+    "event_date": "2026-10-26",
+    "a": "KC",
+    "b": "BLG",
+    "score_a": 0,
+    "score_b": 1,
+    "best_of": 1,
+    "input_date": "2026-10-26",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483840"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "pun",
+      "hizto",
+      "dire",
+      "eddie",
+      "bie"
+    ],
+    "names_b": [
+      "zest",
+      "curse",
+      "feisty",
+      "duduhh",
+      "ackerman"
+    ],
+    "round": 3,
+    "event_date": "2026-10-26",
+    "a": "TSW",
+    "b": "LOS",
+    "score_a": 0,
+    "score_b": 2,
+    "best_of": 3,
+    "input_date": "2026-10-26",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_483861",
+      "LOLTMNT02_482893"
+    ]
+  },
+  {
+    "league": "WCS",
+    "names_a": [
+      "breathe",
+      "tarzan",
+      "shanks",
+      "hope",
+      "kael"
+    ],
+    "names_b": [
+      "morgan",
+      "josedeodo",
+      "quid",
+      "yeon",
+      "corejj"
+    ],
+    "round": 3,
+    "event_date": "2026-10-26",
+    "a": "AL",
+    "b": "TLAW",
+    "score_a": 0,
+    "score_b": 2,
+    "best_of": 3,
+    "input_date": "2026-10-26",
+    "feature_origin": "immutable original pre-day input",
+    "game_ids": [
+      "LOLTMNT02_482911",
+      "LOLTMNT02_483885"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-28",
+    "a": "MKOI",
+    "b": "T1",
+    "score_a": 0,
+    "score_b": 2,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "myrwn",
+      "elyoya",
+      "jojopyun",
+      "supa",
+      "alvaro"
+    ],
+    "names_b": [
+      "doran",
+      "oner",
+      "faker",
+      "peyz",
+      "keria"
+    ],
+    "input_date": "2026-10-28",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "supa",
+      "jng": "elyoya",
+      "mid": "jojopyun",
+      "sup": "alvaro",
+      "top": "myrwn"
+    },
+    "lineup_b": {
+      "bot": "peyz",
+      "jng": "oner",
+      "mid": "faker",
+      "sup": "keria",
+      "top": "doran"
+    },
+    "history_cutoff_exclusive": "2026-10-28",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486159",
+      "LOLTMNT02_486172"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-28",
+    "a": "IG",
+    "b": "LYON",
+    "score_a": 2,
+    "score_b": 1,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "theshy",
+      "wei",
+      "rookie",
+      "jiaqi",
+      "meiko"
+    ],
+    "names_b": [
+      "dhokla",
+      "inspired",
+      "saint",
+      "berserker",
+      "isles"
+    ],
+    "input_date": "2026-10-28",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "jiaqi",
+      "jng": "wei",
+      "mid": "rookie",
+      "sup": "meiko",
+      "top": "theshy"
+    },
+    "lineup_b": {
+      "bot": "berserker",
+      "jng": "inspired",
+      "mid": "saint",
+      "sup": "isles",
+      "top": "dhokla"
+    },
+    "history_cutoff_exclusive": "2026-10-28",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486183",
+      "LOLTMNT02_486186",
+      "LOLTMNT02_486192"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-29",
+    "a": "KC",
+    "b": "CFO",
+    "score_a": 2,
+    "score_b": 0,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "canna",
+      "yike",
+      "kyeahoo",
+      "caliste",
+      "busio"
+    ],
+    "names_b": [
+      "rest",
+      "shad0w",
+      "pout",
+      "doggo",
+      "kino"
+    ],
+    "input_date": "2026-10-29",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "caliste",
+      "jng": "yike",
+      "mid": "kyeahoo",
+      "sup": "busio",
+      "top": "canna"
+    },
+    "lineup_b": {
+      "bot": "doggo",
+      "jng": "shad0w",
+      "mid": "pout",
+      "sup": "kino",
+      "top": "rest"
+    },
+    "history_cutoff_exclusive": "2026-10-29",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486299",
+      "LOLTMNT02_486309"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-29",
+    "a": "BLG",
+    "b": "TES",
+    "score_a": 1,
+    "score_b": 2,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "bin",
+      "xun",
+      "knight",
+      "viper",
+      "on"
+    ],
+    "names_b": [
+      "369",
+      "tian",
+      "creme",
+      "jackeylove",
+      "zhuo"
+    ],
+    "input_date": "2026-10-29",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "viper",
+      "jng": "xun",
+      "mid": "knight",
+      "sup": "on",
+      "top": "bin"
+    },
+    "lineup_b": {
+      "bot": "jackeylove",
+      "jng": "tian",
+      "mid": "creme",
+      "sup": "zhuo",
+      "top": "369"
+    },
+    "history_cutoff_exclusive": "2026-10-29",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486325",
+      "LOLTMNT02_485267",
+      "LOLTMNT02_486341"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-30",
+    "a": "LOS",
+    "b": "TLAW",
+    "score_a": 2,
+    "score_b": 1,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "zest",
+      "curse",
+      "feisty",
+      "duduhh",
+      "ackerman"
+    ],
+    "names_b": [
+      "morgan",
+      "josedeodo",
+      "quid",
+      "yeon",
+      "corejj"
+    ],
+    "input_date": "2026-10-30",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "duduhh",
+      "jng": "curse",
+      "mid": "feisty",
+      "sup": "ackerman",
+      "top": "zest"
+    },
+    "lineup_b": {
+      "bot": "yeon",
+      "jng": "josedeodo",
+      "mid": "quid",
+      "sup": "corejj",
+      "top": "morgan"
+    },
+    "history_cutoff_exclusive": "2026-10-30",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_485366",
+      "LOLTMNT02_485368",
+      "LOLTMNT02_485371"
+    ]
+  },
+  {
+    "round": 4,
+    "event_date": "2026-10-30",
+    "a": "G2",
+    "b": "HLE",
+    "score_a": 0,
+    "score_b": 2,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "brokenblade",
+      "skewmond",
+      "caps",
+      "hans sama",
+      "labrov"
+    ],
+    "names_b": [
+      "zeus",
+      "kanavi",
+      "zeka",
+      "gumayusi",
+      "delight"
+    ],
+    "input_date": "2026-10-30",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "hans sama",
+      "jng": "skewmond",
+      "mid": "caps",
+      "sup": "labrov",
+      "top": "brokenblade"
+    },
+    "lineup_b": {
+      "bot": "gumayusi",
+      "jng": "kanavi",
+      "mid": "zeka",
+      "sup": "delight",
+      "top": "zeus"
+    },
+    "history_cutoff_exclusive": "2026-10-30",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486479",
+      "LOLTMNT02_486481"
+    ]
+  },
+  {
+    "round": 5,
+    "event_date": "2026-10-31",
+    "a": "KC",
+    "b": "MKOI",
+    "score_a": 2,
+    "score_b": 0,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "canna",
+      "yike",
+      "kyeahoo",
+      "caliste",
+      "busio"
+    ],
+    "names_b": [
+      "myrwn",
+      "elyoya",
+      "jojopyun",
+      "supa",
+      "alvaro"
+    ],
+    "input_date": "2026-10-31",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "caliste",
+      "jng": "yike",
+      "mid": "kyeahoo",
+      "sup": "busio",
+      "top": "canna"
+    },
+    "lineup_b": {
+      "bot": "supa",
+      "jng": "elyoya",
+      "mid": "jojopyun",
+      "sup": "alvaro",
+      "top": "myrwn"
+    },
+    "history_cutoff_exclusive": "2026-10-31",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486541",
+      "LOLTMNT02_485476"
+    ]
+  },
+  {
+    "round": 5,
+    "event_date": "2026-10-31",
+    "a": "LYON",
+    "b": "LOS",
+    "score_a": 2,
+    "score_b": 1,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "dhokla",
+      "inspired",
+      "saint",
+      "berserker",
+      "isles"
+    ],
+    "names_b": [
+      "zest",
+      "curse",
+      "feisty",
+      "duduhh",
+      "ackerman"
+    ],
+    "input_date": "2026-10-31",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "berserker",
+      "jng": "inspired",
+      "mid": "saint",
+      "sup": "isles",
+      "top": "dhokla"
+    },
+    "lineup_b": {
+      "bot": "duduhh",
+      "jng": "curse",
+      "mid": "feisty",
+      "sup": "ackerman",
+      "top": "zest"
+    },
+    "history_cutoff_exclusive": "2026-10-31",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_485482",
+      "LOLTMNT02_485488",
+      "LOLTMNT02_486555"
+    ]
+  },
+  {
+    "round": 5,
+    "event_date": "2026-10-31",
+    "a": "BLG",
+    "b": "HLE",
+    "score_a": 2,
+    "score_b": 0,
+    "best_of": 3,
+    "league": "WCS",
+    "names_a": [
+      "bin",
+      "xun",
+      "knight",
+      "viper",
+      "on"
+    ],
+    "names_b": [
+      "zeus",
+      "kanavi",
+      "zeka",
+      "gumayusi",
+      "delight"
+    ],
+    "input_date": "2026-10-31",
+    "patch": "16.20",
+    "lineup_a": {
+      "bot": "viper",
+      "jng": "xun",
+      "mid": "knight",
+      "sup": "on",
+      "top": "bin"
+    },
+    "lineup_b": {
+      "bot": "gumayusi",
+      "jng": "kanavi",
+      "mid": "zeka",
+      "sup": "delight",
+      "top": "zeus"
+    },
+    "history_cutoff_exclusive": "2026-10-31",
+    "feature_origin": "actual first-game lineup, pre-day history",
+    "game_ids": [
+      "LOLTMNT02_486564",
+      "LOLTMNT02_486571"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "event": "Worlds 2026 Swiss Stage",
+  "completed_through_event_date": "2026-10-31",
+  "retrieved_date": "2026-11-02",
+  "source": "https://lolesports.com/en-GB/tournament/115660540725177488/stage/115660540725570706",
+  "schedule_source": "https://lolesports.com/en-US/leagues/worlds",
+  "initial_manifest": "data/swiss_2026_results.json",
+  "note": "The unchanged first 26 series are read from initial_manifest. Append these seven to obtain all 33 series and 51 games. Dates are event dates; raw timestamps control feature chronology.",
+  "fields": ["round", "event_date", "a", "b", "score_a", "score_b", "best_of"],
+  "additional_matches": [
+    [4, "2026-10-29", "KC", "CFO", 2, 0, 3],
+    [4, "2026-10-29", "BLG", "TES", 1, 2, 3],
+    [4, "2026-10-30", "LOS", "TLAW", 2, 1, 3],
+    [4, "2026-10-30", "G2", "HLE", 0, 2, 3],
+    [5, "2026-10-31", "KC", "MKOI", 2, 0, 3],
+    [5, "2026-10-31", "LYON", "LOS", 2, 1, 3],
+    [5, "2026-10-31", "BLG", "HLE", 2, 0, 3]
+  ]
+}
